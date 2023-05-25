@@ -3,16 +3,7 @@
         <nav class="navbar">
             <div>The Body Knows Somatics</div>
             <div>
-                <button
-                    class="hamburger hamburger--collapse js-hamburger"
-                    :class="{ 'is-active': isSidebarActive }"
-                    v-on:click="handleHamburger"
-                    type="button"
-                    >
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
+                <HamburgerComponent :isSidebarActive="isSidebarActive" :handleHamburger="handleHamburger" />
                 <div :class="{ hidden: !isSidebarActive }">
                     <RouterLink to="/">Home</RouterLink>
                     <RouterLink to="/offerings">Offerings</RouterLink>
@@ -27,9 +18,10 @@
 
 <script>
 import { RouterLink } from 'vue-router';
+import HamburgerComponent from './HamburgerComponent.vue';
 
 export default {
-    components: { RouterLink },
+    components: { RouterLink, HamburgerComponent },
     data() {
         return {
             isSidebarActive: false
@@ -43,10 +35,7 @@ export default {
 }
 </script>
 
-<!-- hamburger from https://jonsuh.com/hamburgers/ -->
-<style lang="scss">
-@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
-
+<style>
 .navbar {
     display: flex;
     justify-content: space-between;
