@@ -1,16 +1,14 @@
 <script>
-// import { defineComponent } from 'vue';
-// import Home from '../components/Home.vue'
-import TestComponent from '../components/TestComponent.vue';
-
+import { RouterLink } from 'vue-router';
+// import TestComponent from '../components/TestComponent.vue';
 export default {
-  // name: 'HomeView',
-  components: { TestComponent },
-  setup() {
-    const id = 'freddy';
+  name: 'HomeView',
+  components: { RouterLink },
+  // setup() {
+  //   const id = 'freddy';
 
-    return { id }
-  }
+  //   return { id }
+  // }
 
 }
 
@@ -19,7 +17,12 @@ export default {
 
 <template>
   <main>
-    <!-- <Home /> -->
-    <TestComponent :id="id" />
+    <!-- <TestComponent :id="id" /> -->
+    <h1>
+      Somatic Experiencing Therapy and Bodywork
+    </h1>
+    <RouterLink to="/">Learn More</RouterLink>
+
+
   </main>
 </template>
