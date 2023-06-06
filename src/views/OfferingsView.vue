@@ -19,8 +19,14 @@
                 <p>This might look like noticing sensations in the body connected to thoughts that cause us discomfort and helping the body learn to feel safe. <b>This work is purposely slow because when our body is holding trauma responses, what it needs is time, space and support.</b> We will take our time to help the body process what it is holding physiologically.</p>
                 <p>With my background as an educator, I believe in teaching my clients about how their nervous system functions. <b>I find that understanding why our bodies behave the way that they do can be deeply relieving and empowering. Our bodies are not defective, they are protective.</b></p>
             </div>
+            <aside>
+                <img src="../assets/images/rosemary.jpg" alt="A short leafed rosemary plant">
+            </aside>
         </section>
-        <section class="primary" id="somatic-experiencing">
+        <section id="somatic-experiencing">
+            <aside>
+                <img src="../assets/images/open_book.jpg" alt="A closeup image of an open book with a sewn in bookmark">
+            </aside>
             <div class="section-wrapper">
                 <p><b>Somatic Experiencing (SE™)</b> is a “body-oriented therapeutic model for healing trauma and stress. It is based on a multidisciplinary intersection of physiology, psychology, ethology, biology, neuroscience, indigenous healing practices, and medical biophysics and has been clinically applied for more than four decades. It is the life’s work of Dr. Peter A. Levine."</p>
                 <p>In my personal experience, SE has empowered me to create a deep relationship with my body and to trust and care for myself in new ways. <b>By learning how to listen more deeply, patterns of trauma and overwhelm find their way toward softening and resolution.</b> Our capacity for connection with others becomes more engaged. We experience more of what it feels like to be alive and develop an environment of curiosity for the experiences of our body. <b>With increased resilience, we can find ways to move through each day's inevitable challenges with less discomfort and more support from the inside out.</b></p>

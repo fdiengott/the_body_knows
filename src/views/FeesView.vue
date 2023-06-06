@@ -1,8 +1,9 @@
 <template>
     <main>
-        <h1>
-            Fees View
-        </h1>
+        <section>
+            <h1>Fees View</h1>
+            <img src="../assets/images/potted_plants.jpg" alt="A view from above of a dozen young seedlings sprouting from pots of soil">
+        </section>
         <section>
             <div class="section-wrapper">
                 <p>A note about fees and reduced-price sessions: <b>I recognize that individual sessions can be a financial burden, and I am strongly committed to making this work financially accessible while also honoring my capacity to hold space effectively and care for myself.</b></p>
