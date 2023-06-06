@@ -20,5 +20,18 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@layer base {
+    @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+}
+
+@layer component {
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        background-color: #fff;
+    }
+
+    .hamburger {
+        padding: 15px 10px;
+        display: flex;
+    }
+}
 </style>
