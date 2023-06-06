@@ -1,34 +1,162 @@
 <template>
-    <div>
+    <div class="contact-container">
         <h1>Contact</h1>
 
         <p>I would love to connect with you for a free 30 minute intro call.</p>
 
+        <!-- TODO email -->
         <form action="">
-            <div>
+            <fieldset class="form-group">
+                <input type="text" name="name" id="name-input" required>
                 <label for="name-input">Name</label>
-                <input type="text" name="" id="name-input">
-            </div>
-            <div>
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="text" name="pronouns" id="pronouns-input" required>
                 <label for="pronouns-input">Pronouns</label>
-                <input type="text" name="" id="pronouns-input">
-            </div>
-            <div>
+            </fieldset>
+            <fieldset class="form-group">
+                <textarea name="message" id="message-input" rows="8" required></textarea>
                 <label for="message-input">Message</label>
-                <textarea name="" id="message-input" cols="30" rows="10"></textarea>
-            </div>
+            </fieldset>
 
-            <button type="submit">Submit</button>
+            <button class="submit" type="submit">
+                <span>Submit</span>
+            </button>
         </form>
     </div>
 </template>
 
-<script>
-export default {
+<style lang="scss">
+    @layer component {
+        .contact-container {
+            padding: 2rem;
+            margin: 0 auto;
+        }
 
-}
-</script>
+        form {
+            margin-block-start: 1.5rem;
+        }
 
-<style lang="">
+        .form-group {
+            position: relative;
+            padding: 6px 0;
 
+            label {
+                font-size: 14px;
+                color: var(--color-primary);
+                position: absolute;
+                top: -10px;
+                left: 10px;
+                background-color: var(--color-bg);
+                transition: all .3s ease;
+            }
+
+            input,
+            textarea {
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid var(--color-primary);
+                margin-bottom: 20px;
+                outline: 0;
+                width: 100%;
+                background-color: transparent;
+            }
+
+            input + label,
+            textarea + label {
+                top: 10px;
+                background-color: transparent;
+            }
+
+            input:focus + label,
+            textarea:focus + label {
+                top: -10px;
+                background-color: var(--color-bg);
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            textarea {
+                resize: none;
+            }
+        }
+
+        .submit {
+            --transition: all 0.4s ease-in-out;
+
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background: var(--color-primary);
+            box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+
+            span {
+                --reduced-size: scale(0.95);
+
+                text-align: center;
+                text-decoration: none;
+                width: 100%;
+                padding: 18px 25px;
+                color: #fff;
+                font-size: 1.125em;
+                font-weight: 700;
+                letter-spacing: 0.3em;
+                z-index: 20;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &::after {
+                content: " ";
+                width: 0%;
+                height: 100%;
+                background: var(--color-accent);
+                position: absolute;
+                transition: var(--transition);
+                right: 0;
+            }
+
+            &:hover {
+                transform: scale(1.05);
+
+                span {
+                    color: var(--color-text);
+                    animation: scaleUp 0.3s ease-in-out;
+                }
+
+                &::after {
+                    right: auto;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+
+            &:active {
+                transform: scale(1);
+
+                span {
+                    transform: var(--reduced-size);
+                }
+            }
+        }
+
+        @keyframes scaleUp {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: var(--reduced-size);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
 </style>
