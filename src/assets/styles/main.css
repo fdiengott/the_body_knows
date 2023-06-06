@@ -1,0 +1,73 @@
+@layer reset, base, component;
+
+@import './reset.css';
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+@layer base {
+  /* > reminder: MOBILE first */
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  main {
+    height: 100%;
+    transform-style: preserve-3d;
+  }
+
+  section {
+    --section-padding: 4rem;
+  }
+
+  /* TODO fine tune */
+  .section-wrapper {
+    padding-inline: 2rem;
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-block: var(--section-padding) 2rem;
+    margin-block: 2rem 4rem;
+  }
+
+  section {
+    position: relative;
+  }
+
+  section:not(.primary) {
+    background-color: var(--color-bg);
+  }
+
+  section.primary {
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  section p {
+    margin-block: 2rem;
+  }
+
+  section.primary::before,
+  section.primary::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: var(--section-padding);
+
+    background-color: var(--color-bg);
+  }
+
+  section.primary::before {
+    -webkit-mask-image: url('../wave1.svg');
+    mask-image: url('../wave1.svg');
+    top: 0;
+  }
+
+  section.primary::after {
+    -webkit-mask-image: url('../wave1.svg');
+    mask-image: url('../wave1.svg');
+    background-color: var(--color-primary);
+    bottom: calc(-1 * var(--section-padding));
+  }
+
+}

@@ -1,0 +1,57 @@
+@layer base {
+  /* TODO setup my colors here like this */
+
+  /* color palette from <https://github.com/vuejs/theme> */
+  :root {
+    /* TODO Put my colors specific theme colors here */
+    /* then apply them to the below for light/dark theme */
+  }
+
+  /* semantic color variables for this project */
+  :root {
+    --color-background: var(--vt-c-white);
+    --color-background-soft: var(--vt-c-white-soft);
+    --color-background-mute: var(--vt-c-white-mute);
+
+    --color-border: var(--vt-c-divider-light-2);
+    --color-border-hover: var(--vt-c-divider-light-1);
+
+    --color-heading: var(--vt-c-text-light-1);
+    --color-text: var(--vt-c-text-light-1);
+
+    --section-gap: 160px;
+  }
+
+  :root {
+    --color-bg: #FFF1EB;
+    --color-primary: #86AC8C;
+    --color-primary-light: #86AC8C;
+    --color-accent: #e1baf3;
+    --color-text: #292929;
+
+    --default-transition-speed: 250ms;
+  }
+
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: var(--vt-c-black);
+      --color-background-soft: var(--vt-c-black-soft);
+      --color-background-mute: var(--vt-c-black-mute);
+
+      --color-border: var(--vt-c-divider-dark-2);
+      --color-border-hover: var(--vt-c-divider-dark-1);
+
+      --color-heading: var(--vt-c-text-dark-1);
+      --color-text: var(--vt-c-text-dark-2);
+    }
+  } */
+
+  body {
+    /* use rem for font size */
+    /* change font family */
+
+    line-height: 2;
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+  }
+}
