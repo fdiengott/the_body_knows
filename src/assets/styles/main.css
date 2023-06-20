@@ -1,32 +1,59 @@
-@layer reset, base, component;
+@layer reset, base, view, component;
 
 @import './reset.css';
 @import './base.css';
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 @layer base {
-  /* > reminder: MOBILE first */
-
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: var(--fs-400);
   }
 
   main {
     height: 100%;
     transform-style: preserve-3d;
+
+    --section-block-padding: 1rem;
+    --section-inline-padding: 2rem;
   }
 
-  section {
-    --section-padding: 4rem;
+  h1 {
+    font-size: var(--fs-700);
+    font-weight: 800;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  h3 {
+    font-weight: 600;
+  }
+
+  h4 {
+    font-weight: 500;
+  }
+
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+    margin-block: 1.5em 0.5em;
+  }
+
+  .content-grid {
+    display: grid;
+    max-width: 40ch;
+    margin-inline: auto;
   }
 
   /* TODO fine tune */
   .section-wrapper {
+  /* .title-container { */
     padding-inline: 2rem;
-    max-width: 50rem;
+    /* max-width: 50rem; */
+    max-width: 50ch;
     margin-inline: auto;
-    padding-block: var(--section-padding) 2rem;
-    margin-block: 2rem 4rem;
+    padding-block: var(--section-block-padding);
   }
 
   section {
@@ -40,9 +67,15 @@
   section.primary {
     background-color: var(--color-primary);
     color: white;
+
+    --section-block-padding: 2rem;
   }
 
-  section p {
+  section.primary .section-wrapper {
+    padding-block: var(--section-block-padding);
+  }
+
+  section p:not(:first-child) {
     margin-block: 2rem;
   }
 
@@ -52,7 +85,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: var(--section-padding);
+    height: var(--section-block-padding);
 
     background-color: var(--color-bg);
   }
@@ -67,7 +100,34 @@
     -webkit-mask-image: url('../wave1.svg');
     mask-image: url('../wave1.svg');
     background-color: var(--color-primary);
-    bottom: calc(-1 * var(--section-padding));
+    bottom: calc(-1 * var(--section-block-padding));
+  }
+
+  .image-banner {
+    display: grid;
+    grid-template-rows: clamp(20rem, 15vw + 20rem, 40rem);
+    place-items: center;
+    overflow: hidden;
+
+    > h1 {
+      padding: 0.5em 1em;
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+
+        background-color: #dfdfdf90;
+        filter: blur(12px);
+      }
+    }
+  }
+
+
+  .image-banner>* {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
   }
 
 }

@@ -1,7 +1,7 @@
 <template>
-    <header :class="sticking && 'sticking'">
+    <header :class="{ sticking, home }">
         <nav class="nav">
-            <RouterLink class="link-hover" to="/" v-on:click="closeSidebar">
+            <RouterLink class="link-hover home-link" :class="home" to="/" v-on:click="closeSidebar">
                 The Body Knows Somatics
             </RouterLink>
             <div class="navbar">
@@ -28,6 +28,7 @@ import HamburgerComponent from './HamburgerComponent.vue';
 
 export default {
     components: { RouterLink, HamburgerComponent },
+    props: ['home'],
     data() {
         return {
             isSidebarActive: false,
@@ -48,119 +49,153 @@ export default {
                 this.closeSidebar();
             }
         });
-    },
+    }
 }
 </script>
 
-<style>
+<style lang="scss">
 /* TODO make sure this works for mobile!!!!!! */
-/* TODO make these component layered */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+
+@layer component {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        display: grid;
+        align-items: center;
+    }
+    .home {
+        position: absolute;
+
+        .nav {
+            background: none;
+        }
+
+        .nav-links {
+            background: none;
+
+            a {
+                padding: 5px 20px;
+            }
+        }
+
+        // .nav-links.isActive::after {
+        //     content: '';
+        //     inset: 0;
+        //     background: hsl(216deg 50% 30% / 25%);
+        //     position: absolute;
+        //     z-index: -1;
+        //     filter: blur(10px);
+        // }
+    }
+
+    .nav {
+        --nav-block-padding: 10px;
+        --nav-inline-padding: 15px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--nav-block-padding) var(--nav-inline-padding);
+        background-color: var(--color-primary);
+        color: #fff;
+        height: 100%;
+    }
+
+    .nav > a {
+        font-size: var(--fs-400);
+        padding: 0.4rem;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    .navbar-container {
+        position: relative;
+    }
+
+    .nav-links {
+        position: absolute;
+        transition: var(--default-transition-speed) transform ease-in-out;
+        transform: translate(120%);
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+        right: calc(-1 * var(--nav-inline-padding));
+        top: var(--nav-block-padding);
+        align-items: end;
+        background-color: var(--color-primary);
+    }
+
+    .nav-links.isActive {
+        transform: translate(0);
+    }
+
+    .nav-links li {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+
+    .nav-links a {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        text-align: end;
+        white-space: nowrap;
+    }
+
+    .home .home-link {
+        font-size: var(--fs-500);
+    }
+
+    .link-hover::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        margin-left: auto;
+        transition: var(--default-transition-speed) all linear;
+        background-color: var(--color-accent);
+    }
+
+    .link-hover:hover::after {
+        width: 100%;
+    }
+
+    /* .nav-links li::after {
+        content: '';
+        position: absolute;
+        background-color: var(--color-accent);
+        top: 0;
+        right: 10px;
+
+        width: 20px;
+        width: 3px;
+        height: 100%;
+        opacity: 0;
+        transform: translate(10px);
+
+        transition: var(--default-transition-speed) all linear;
+    } */
+
+    .nav-links li:hover  {
+        color: var(--color-accent);
+    }
+    /* .nav-links li:hover::after {
+        opacity: 1;
+        transform: translate(0);
+        transform: translate(calc(-1 * var(--navbar-width)));
+        width: 3px;
+    } */
+
+    /* .nav-links a:hover {
+        background-color: var(--color-accent);
+        color: var(--color-bg);
+    } */
 }
-.nav {
-    --nav-block-padding: 10px;
-    --nav-inline-padding: 15px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--nav-block-padding) var(--nav-inline-padding);
-    background-color: var(--color-primary);
-    color: #fff;
-    height: 100%;
-}
-
-.nav > a {
-    font-size: 1.4rem;
-    padding: 0.4rem;
-}
-
-.navbar {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-}
-
-.navbar-container {
-    position: relative;
-}
-
-.nav-links {
-    position: absolute;
-    transition: var(--default-transition-speed) transform ease-in-out;
-    transform: translate(120%);
-    display: flex;
-    flex-direction: column;
-    min-width: 200px;
-    right: calc(-1 * var(--nav-inline-padding));
-    top: var(--nav-block-padding);
-    align-items: end;
-    background-color: var(--color-primary);
-}
-
-.nav-links.isActive {
-    transform: translate(0);
-}
-
-.nav-links li {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-}
-
-.nav-links a {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    text-align: end;
-    white-space: nowrap;
-}
-
-.link-hover::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    margin-left: auto;
-    transition: var(--default-transition-speed) all linear;
-    background-color: var(--color-accent);
-}
-
-.link-hover:hover::after {
-    width: 100%;
-}
-
-/* .nav-links li::after {
-    content: '';
-    position: absolute;
-    background-color: var(--color-accent);
-    top: 0;
-    right: 10px;
-
-    width: 20px;
-    width: 3px;
-    height: 100%;
-    opacity: 0;
-    transform: translate(10px);
-
-    transition: var(--default-transition-speed) all linear;
-} */
-
-.nav-links li:hover  {
-    color: var(--color-accent);
-}
-/* .nav-links li:hover::after {
-    opacity: 1;
-    transform: translate(0);
-    transform: translate(calc(-1 * var(--navbar-width)));
-    width: 3px;
-} */
-
-/* .nav-links a:hover {
-    background-color: var(--color-accent);
-    color: var(--color-bg);
-} */
 </style>

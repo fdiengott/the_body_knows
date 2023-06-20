@@ -1,29 +1,45 @@
+<script>
+import NavBar from '../components/NavBar.vue';
+
+export default {
+    components: { NavBar }
+}
+</script>
+
 <template>
-    <div class="contact-container">
-        <h1>Contact</h1>
+    <NavBar />
+    <section class="contact-container">
+        <div class="section-wrapper">
 
-        <p>I would love to connect with you for a free 30 minute intro call.</p>
+            <h1>Contact</h1>
 
-        <!-- TODO email -->
-        <form action="">
-            <fieldset class="form-group">
-                <input type="text" name="name" id="name-input" required>
-                <label for="name-input">Name</label>
-            </fieldset>
-            <fieldset class="form-group">
-                <input type="text" name="pronouns" id="pronouns-input" required>
-                <label for="pronouns-input">Pronouns</label>
-            </fieldset>
-            <fieldset class="form-group">
-                <textarea name="message" id="message-input" rows="8" required></textarea>
-                <label for="message-input">Message</label>
-            </fieldset>
+            <p>I would love to connect with you for a free 30 minute intro call.</p>
 
-            <button class="submit" type="submit">
-                <span>Submit</span>
-            </button>
-        </form>
-    </div>
+            <!-- TODO email -->
+            <form action="">
+                <fieldset class="form-group">
+                    <input type="text" name="name" id="name-input" required placeholder=" ">
+                    <label for="name-input">Name</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="text" name="pronouns" id="pronouns-input" required placeholder=" ">
+                    <label for="pronouns-input">Pronouns</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input type="email" name="email" id="email-input" required placeholder=" ">
+                    <label for="email-input">Email</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <textarea name="message" id="message-input" rows="8" required placeholder=" "></textarea>
+                    <label for="message-input">Message</label>
+                </fieldset>
+
+                <button class="submit" type="submit">
+                    <span>Submit</span>
+                </button>
+            </form>
+        </div>
+    </section>
 </template>
 
 <style lang="scss">
@@ -60,6 +76,8 @@
                 outline: 0;
                 width: 100%;
                 background-color: transparent;
+                font-size: var(--fs-400);
+                font-family: 'Jakarta Sans', sans-serif;
             }
 
             input + label,
@@ -69,11 +87,17 @@
             }
 
             input:focus + label,
-            textarea:focus + label {
+            textarea:focus + label,
+            input:not(:placeholder-shown) + label,
+            textarea:not(:placeholder-shown) + label {
                 top: -10px;
                 background-color: var(--color-bg);
                 font-weight: 600;
                 font-size: 14px;
+            }
+
+            textarea:focus + label {
+                top: -8px;
             }
 
             textarea {

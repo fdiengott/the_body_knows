@@ -1,14 +1,12 @@
 <template>
   <div class="app-wrapper">
     <div id="header-scroll-listener"></div>
-    <NavBar :sticking="sticking" />
     <RouterView />
   </div>
 </template>
 
 <script>
 import { RouterView } from 'vue-router';
-import NavBar from './components/NavBar.vue';
 
 window.addEventListener('load', () => {
   const handleIntersect = () => {
@@ -31,7 +29,7 @@ export default {
       sticking: false
     }
   },
-  components: { RouterView, NavBar }
+  components: { RouterView }
 }
 </script>
 
@@ -42,9 +40,6 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-
-  display: grid;
-  grid-template-rows: 0 80px 1fr;
 
   scroll-behavior: smooth;
   scroll-padding-top: 8%;

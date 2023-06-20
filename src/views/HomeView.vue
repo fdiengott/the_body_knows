@@ -1,12 +1,13 @@
 <script>
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
+import NavBar from '../components/NavBar.vue';
 
 const intersectOptions = {}
 
 export default {
   name: 'HomeView',
-  components: { RouterLink },
+  components: { RouterLink, NavBar },
   methods: {
     handleIntersect(entries) {
       entries.forEach(entry => {
@@ -37,6 +38,7 @@ export default {
 
 <template>
   <main>
+    <NavBar :home="true" />
     <div class="title-card">
       <div class="text-container" ref="textContainer">
         <h1>Somatic Experiencing Therapy and Bodywork</h1>
@@ -58,6 +60,10 @@ export default {
 }
 
 @layer component {
+  main {
+    overflow: hidden;
+  }
+
   .title-card {
     display: flex;
     flex-direction: column;
@@ -88,7 +94,9 @@ export default {
   h1 {
     // TODO make this text-size way bigger
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: var(--fs-800);
+    text-wrap: balance;
+    line-height: 1.2;
     font-weight: 600;
   }
 

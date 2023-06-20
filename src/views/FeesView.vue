@@ -1,7 +1,8 @@
 <template>
+    <NavBar />
     <main>
-        <section>
-            <h1>Fees View</h1>
+        <section class="image-banner">
+            <h1>Fees</h1>
             <img src="../assets/images/potted_plants.jpg" alt="A view from above of a dozen young seedlings sprouting from pots of soil">
         </section>
         <section>
@@ -35,10 +36,17 @@
     </main>
 </template>
 <script>
+import NavBar from '../components/NavBar.vue';
+
 export default {
-
+    components: { NavBar }
 }
-</script>
-<style lang="">
 
+</script>
+<style lang="scss">
+    h1 {
+        z-index: 1;
+        position: relative;
+        font-size: var(--fs-700);
+    }
 </style>
