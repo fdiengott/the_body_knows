@@ -26,7 +26,7 @@ export default {
 
 @layer component {
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-        background-color: #fff;
+        background-color: var(--white);
     }
 
     .hamburger {

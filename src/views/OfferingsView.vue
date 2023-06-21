@@ -8,22 +8,20 @@
         <main>
             <aside class="sticky-aside">
                 <ul>
+                    <li><a href="#somatic-work">What is Somatic Work</a></li>
                     <li><a href="#somatic-experiencing">Somatic Experiencing</a></li>
                     <li><a href="#reiki">Reiki</a></li>
                     <li><a href="#voice">Voice</a></li>
                     <li><a href="#movement-yoga">Movement/Yoga</a></li>
                 </ul>
             </aside>
-            <section>
+            <section id="somatic-work">
                 <div class="section-wrapper">
                     <h2>What is Somatic Work?</h2>
                     <p>Somatic practices like Somatic Experiencing explore how our feelings, memories, conscious thoughts, behaviors and sensations are all experienced in our body. These modalities differ from psychotherapy. Rather than prioritizing only speaking the story of events that have affected us, we make space for the felt experience of the body.</p>
                     <p>This might look like noticing sensations in the body connected to thoughts that cause us discomfort and helping the body learn to feel safe. <b>This work is purposely slow because when our body is holding trauma responses, what it needs is time, space and support.</b> We will take our time to help the body process what it is holding physiologically.</p>
                     <p>With my background as an educator, I believe in teaching my clients about how their nervous system functions. <b>I find that understanding why our bodies behave the way that they do can be deeply relieving and empowering. Our bodies are not defective, they are protective.</b></p>
                 </div>
-                <!-- <aside>
-                    <img src="../assets/images/rosemary.jpg" alt="A short leafed rosemary plant">
-                </aside> -->
             </section>
             <section id="somatic-experiencing">
                 <div class="section-wrapper">
@@ -34,7 +32,7 @@
                 </div>
             </section>
             <!-- <CardDivider :primary="true" /> -->
-            <section id="reiki">
+            <section class="primary" id="reiki">
                 <div class="section-wrapper">
                     <h2>Other Modalities I Integrate with Somatic Experiencing</h2>
                     <h3>Reiki</h3>
@@ -49,7 +47,7 @@
                     </p>
                 </div>
             </section>
-            <section class="primary" id="voice">
+            <section id="voice">
                 <div class="section-wrapper">
                     <h3>Voice</h3>
                     <p>
@@ -60,7 +58,7 @@
                     </p>
                 </div>
             </section>
-            <section id="movement-yoga">
+            <section class="primary" id="movement-yoga">
                 <div class="section-wrapper">
                     <h3>Movement/Yoga</h3>
                     <p>
@@ -77,8 +75,6 @@
 
 <script>
 import NavBar from '../components/NavBar.vue';
-
-// import CardDivider from '../components/CardDivider.vue';
 
 export default {
     components: { NavBar }

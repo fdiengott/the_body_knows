@@ -10,12 +10,8 @@ export default {
     <NavBar />
     <section class="contact-container">
         <div class="section-wrapper">
-
             <h1>Contact</h1>
-
             <p>I would love to connect with you for a free 30 minute intro call.</p>
-
-            <!-- TODO email -->
             <form action="">
                 <fieldset class="form-group">
                     <input type="text" name="name" id="name-input" required placeholder=" ">
@@ -42,7 +38,7 @@ export default {
     </section>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
     @layer component {
         .contact-container {
             padding: 2rem;
@@ -76,8 +72,6 @@ export default {
                 outline: 0;
                 width: 100%;
                 background-color: transparent;
-                font-size: var(--fs-400);
-                font-family: 'Jakarta Sans', sans-serif;
             }
 
             input + label,
@@ -94,6 +88,7 @@ export default {
                 background-color: var(--color-bg);
                 font-weight: 600;
                 font-size: 14px;
+                color: var(--color-accent);
             }
 
             textarea:focus + label {
@@ -127,7 +122,7 @@ export default {
                 text-decoration: none;
                 width: 100%;
                 padding: 18px 25px;
-                color: #fff;
+                color: var(--white-soft);
                 font-size: 1.125em;
                 font-weight: 700;
                 letter-spacing: 0.3em;

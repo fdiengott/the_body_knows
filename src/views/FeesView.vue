@@ -2,7 +2,7 @@
     <NavBar />
     <main>
         <section class="image-banner">
-            <h1>Fees</h1>
+            <h1>Pricing</h1>
             <img src="../assets/images/potted_plants.jpg" alt="A view from above of a dozen young seedlings sprouting from pots of soil">
         </section>
         <section>
@@ -20,17 +20,31 @@
                 <p>There are times when the reduced-price appointments are full.  When this happens, I will be happy to put you on my waitlist.</p>
 
                 <p>We will touch base about the financial aspect of working together in our initial free 30 minute Zoom call.  This call is required for all new clients so that we can both see if working together feels like a good fit at this time.</p>
-
+            </div>
+        </section>
+        <section class="primary">
+            <div class="section-wrapper">
                 <h2>
-                    Discounted Rates Income breakdown:
+                    Discounted Rates Income breakdown
                 </h2>
-
-                <ul>
-                    <li>30-50K: 125</li>
-                    <li>>20-30K: 100</li>
-                    <li>50-70K: 150</li>
-                    <li>70K+: Full rate (at the frequency that fits your resources)</li>
-                </ul>
+                <table>
+                    <tr>
+                        <td class="income-cell">less than 30K</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>30-50K</td>
+                        <td>125</td>
+                    </tr>
+                    <tr>
+                        <td>50-70K</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>70K+</td>
+                        <td>175</td>
+                    </tr>
+                </table>
             </div>
         </section>
     </main>
@@ -43,10 +57,20 @@ export default {
 }
 
 </script>
-<style lang="scss">
+<style scoped lang="scss">
     h1 {
         z-index: 1;
         position: relative;
-        font-size: var(--fs-700);
+        font-size: var(--fs-800);
+        color: var(--white-soft);
+    }
+
+    h1::after {
+        background-color: #00000060;
+        background-color: var(--black-transparent);
+    }
+
+    .income-cell {
+        padding-right: 3em;
     }
 </style>

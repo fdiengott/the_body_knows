@@ -7,19 +7,12 @@
     /* then apply them to the below for light/dark theme */
   }
 
-  /* semantic color variables for this project */
   :root {
-    --color-background: var(--vt-c-white);
-    --color-background-soft: var(--vt-c-white-soft);
-    --color-background-mute: var(--vt-c-white-mute);
+    --section-gap:var(--green-soft);
 
-    --color-border: var(--vt-c-divider-light-2);
-    --color-border-hover: var(--vt-c-divider-light-1);
+    --border-radius: 20px;
 
-    --color-heading: var(--vt-c-text-light-1);
-    --color-text: var(--vt-c-text-light-1);
-
-    --section-gap: 160px;
+    --default-transition-speed: 250ms;
   }
 
   :root {
@@ -34,33 +27,28 @@
   }
 
   :root {
-    --color-bg: #FFF1EB;
-    --color-primary: #86AC8C;
-    --color-primary-light: #86AC8C;
-    --color-accent: #e1baf3;
-    --color-text: #292929;
+    --white: hsl(46, 46%, 95%);
+    --white-soft: hsl(46, 46%, 89%);
+    --black: hsl(0, 0%, 16%);
+    --black-transparent: hsl(0, 0%, 16%, 38%);
+    --green-soft: hsl(129, 19%, 60%);
 
-    --default-transition-speed: 250ms;
+    --color-bg: var(--white-soft);
+    --color-primary: var(--green-soft);
+    --color-accent: var(--white-soft);
+    --color-text: var(--black);
   }
 
   /* @media (prefers-color-scheme: dark) {
     :root {
-      --color-background: var(--vt-c-black);
-      --color-background-soft: var(--vt-c-black-soft);
-      --color-background-mute: var(--vt-c-black-mute);
-
-      --color-border: var(--vt-c-divider-dark-2);
-      --color-border-hover: var(--vt-c-divider-dark-1);
-
-      --color-heading: var(--vt-c-text-dark-1);
-      --color-text: var(--vt-c-text-dark-2);
+      --color-bg: var(--black);
+      --color-primary: var(--green-soft);
+      --color-accent: var(--black);
+      --color-text: var(--white-soft);
     }
   } */
 
   body {
-    /* use rem for font size */
-    /* change font family */
-
     line-height: 2;
     background-color: var(--color-bg);
     overflow-x: hidden;

@@ -40,12 +40,12 @@ export default {
   <main>
     <NavBar :home="true" />
     <div class="title-card">
-      <div class="text-container" ref="textContainer">
+      <div class="text-container blur-background" ref="textContainer">
         <h1>Somatic Experiencing Therapy and Bodywork</h1>
 
-        <RouterLink class="link-hover" to="/about">Learn More</RouterLink>
+        <RouterLink class="link-hover learn-more" to="/about">Learn More</RouterLink>
       </div>
-      <img src="../assets/images/yellow-gingko-unspash.jpg" alt="" srcset="">
+      <img src="../assets/images/raphael-wild-unsplash.jpg" alt="" srcset="">
     </div>
 
 
@@ -53,12 +53,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.link-hover {
-  display: grid;
-  justify-content: center;
-  padding: 0.2rem 0.4rem;
-}
-
 @layer component {
   main {
     overflow: hidden;
@@ -71,14 +65,8 @@ export default {
     align-items: center;
     text-align: center;
     padding: 2rem;
-
-    // background-image: url('../assets/images/raphael-wild-unsplash.jpg');
-    // height: 90vh;
     height: 100%;
-    // background-size: cover;
-
-    color: #fff;
-
+    color: var(--white-soft);
     position: relative;
 
     img {
@@ -92,7 +80,6 @@ export default {
   }
 
   h1 {
-    // TODO make this text-size way bigger
     margin-bottom: 2rem;
     font-size: var(--fs-800);
     text-wrap: balance;
@@ -101,26 +88,13 @@ export default {
   }
 
   .text-container {
-    position: relative;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      inset: 0;
-
-      background-color: #dfdfdf;
-      mix-blend-mode: multiply;
-      filter: blur(12px);
-    }
-
     > * {
       opacity: 0;
-      transform: translate(-100%);
       filter: blur(3px);
       transition: all 1s ease-in-out;
     }
@@ -129,7 +103,6 @@ export default {
 
       > * {
         opacity: 1;
-        transform: translate(0);
         filter: blur(0);
 
         &:nth-child(2) {
@@ -137,6 +110,33 @@ export default {
           transition-delay: 200ms;
         }
       }
+    }
+
+
+    .learn-more {
+      font-size: var(--fs-500);
+
+      &::after {
+        width: 100%;
+      }
+
+      &:hover::after {
+        background-color: var(--color-primary);
+      }
+
+      // &::before {
+      //   content: '';
+      //   display: block;
+      //   width: 0;
+      //   height: 3px;
+      //   margin-left: auto;
+      //   transition: var(--default-transition-speed) all linear;
+      //   background-color: var(--color-primary);
+      // }
+
+      // &:hover::before {
+      //   width: 100%;
+      // }
     }
   }
 }

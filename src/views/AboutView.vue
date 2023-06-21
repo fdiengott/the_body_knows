@@ -4,7 +4,7 @@
     <main class="about">
       <section class="image-banner">
         <h1>Meet Josephine</h1>
-        <img src="../assets/images/winter_forest.jpg" alt="A bright, calm, snowy forest; looking up at trees">
+        <img class="headshot" src="../assets/images/Jo_pic_3.jpg" alt="">
       </section>
       <section>
         <div class="section-wrapper">
@@ -16,14 +16,12 @@
 
           <p>My trauma education began in my study of Trauma-Informed Yoga and the transformative experience of teaching yoga to survivors of sexual trauma.  Realizing that body-based trauma work was my deepest calling, I went on to study Reiki and Somatic Experiencing and now have a private practice in Brooklyn and online.  I am currently in my second year of the 3 year Somatic Experiencing training.  I specialize in serving queer folks and allies to this community.</p>
         </div>
+        <div class="vertical-offset"></div>
         <aside>
-          <img class="headshot" src="../assets/images/Jo_pic_3.jpg" alt="">
+          <img class="headshot secondary" src="../assets/images/Jo_pic_2.jpg" alt="">
         </aside>
       </section>
       <section>
-        <!-- <aside>
-          <img src="" alt="">
-        </aside> -->
         <div class="section-wrapper">
           <h2>Who I Work With</h2>
           <p>I work with people who are ready to begin to develop or continue to strengthen their relationship to embodiment.</p>
@@ -68,7 +66,11 @@ export default {
       width: 100%;
       object-fit: cover;
       object-position: center;
-      filter: brightness(1.3);
+      filter: brightness(1.5);
+
+      &.secondary {
+        filter: brightness(1.2);
+      }
     }
   }
 </style>

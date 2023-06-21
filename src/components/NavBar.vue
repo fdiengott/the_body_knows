@@ -24,8 +24,6 @@
 import { RouterLink } from 'vue-router';
 import HamburgerComponent from './HamburgerComponent.vue';
 
-// ? perhaps add a click listener on the window, if clicked away, close nav bar
-
 export default {
     components: { RouterLink, HamburgerComponent },
     props: ['home'],
@@ -54,8 +52,6 @@ export default {
 </script>
 
 <style lang="scss">
-/* TODO make sure this works for mobile!!!!!! */
-
 @layer component {
     header {
         position: sticky;
@@ -73,21 +69,13 @@ export default {
         }
 
         .nav-links {
-            background: none;
+            background: var(--black-transparent);
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
 
             a {
                 padding: 5px 20px;
             }
         }
-
-        // .nav-links.isActive::after {
-        //     content: '';
-        //     inset: 0;
-        //     background: hsl(216deg 50% 30% / 25%);
-        //     position: absolute;
-        //     z-index: -1;
-        //     filter: blur(10px);
-        // }
     }
 
     .nav {
@@ -99,7 +87,7 @@ export default {
         align-items: center;
         padding: var(--nav-block-padding) var(--nav-inline-padding);
         background-color: var(--color-primary);
-        color: #fff;
+        color: var(--white);
         height: 100%;
     }
 
@@ -143,7 +131,6 @@ export default {
 
     .nav-links a {
         position: relative;
-        width: 100%;
         padding: 20px;
         text-align: end;
         white-space: nowrap;
@@ -151,20 +138,6 @@ export default {
 
     .home .home-link {
         font-size: var(--fs-500);
-    }
-
-    .link-hover::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 3px;
-        margin-left: auto;
-        transition: var(--default-transition-speed) all linear;
-        background-color: var(--color-accent);
-    }
-
-    .link-hover:hover::after {
-        width: 100%;
     }
 
     /* .nav-links li::after {
@@ -183,9 +156,9 @@ export default {
         transition: var(--default-transition-speed) all linear;
     } */
 
-    .nav-links li:hover  {
-        color: var(--color-accent);
-    }
+    // .nav-links li:hover  {
+    //     color: var(--color-accent);
+    // }
     /* .nav-links li:hover::after {
         opacity: 1;
         transform: translate(0);
