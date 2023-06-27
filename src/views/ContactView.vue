@@ -4,8 +4,8 @@
         <div class="section-wrapper">
             <h1>Contact</h1>
             <p>I would love to connect with you for a free 30 minute intro call.</p>
-            <form data-netlify="true" name="contact-form">
-                <input type="hidden" name="contact" value="contact-form" />
+            <form method="post" name="contact-form">
+                <input type="hidden" name="form-name" value="contact-form" />
 
                 <fieldset class="form-group">
                     <input type="text" name="name" id="name-input" required placeholder=" ">
