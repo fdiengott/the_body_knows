@@ -4,8 +4,8 @@
         <div class="section-wrapper">
             <h1>Contact</h1>
             <p>I would love to connect with you for a free 30 minute intro call.</p>
-            <form data-netlify="true" method="post" name="contact">
-                <input type="hidden" name="contact" value="contact" />
+            <form data-netlify="true" name="contact-form">
+                <input type="hidden" name="contact" value="contact-form" />
 
                 <fieldset class="form-group">
                     <input type="text" name="name" id="name-input" required placeholder=" ">
@@ -36,7 +36,7 @@
 import NavBar from '../components/NavBar.vue';
 
 export default {
-    components: { NavBar }
+    components: { NavBar },
 }
 </script>
 
