@@ -108,25 +108,19 @@ export default {
         flex-direction: column;
     }
 
-    .navbar-container {
-        position: relative;
-    }
-
     .nav-links {
         position: absolute;
-        transition: var(--default-transition-speed) transform ease-in-out;
-        transform: translate(120%);
+        transition: var(--default-transition-speed) right ease-in-out;
         display: flex;
         flex-direction: column;
         min-width: 200px;
-        right: calc(-1 * var(--nav-inline-padding));
-        top: var(--nav-block-padding);
         align-items: end;
         background-color: var(--color-primary);
+        right: -50%;
     }
 
     .nav-links.isActive {
-        transform: translate(0);
+        right: 0;
     }
 
     .nav-links li {
