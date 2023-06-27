@@ -83,7 +83,6 @@ export default {
   h1 {
     margin-bottom: 2rem;
     font-size: var(--fs-800);
-    text-wrap: balance;
     line-height: 1.2;
     font-weight: 600;
   }
@@ -97,7 +96,8 @@ export default {
     > * {
       opacity: 0;
       filter: blur(3px);
-      transition: all 1s ease-in-out;
+      transition: filter 1s ease-in-out, opacity 1s ease-in-out;
+      transition-delay: 300ms;
     }
 
     &.show {

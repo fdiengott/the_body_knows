@@ -64,6 +64,7 @@ export default {
       font-weight: 600;
       z-index: 1;
       margin-block: 0.5em;
+      margin-inline-start: 1em;
 
       position: relative;
     }
