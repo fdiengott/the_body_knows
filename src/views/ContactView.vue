@@ -5,6 +5,8 @@
             <h1>Contact</h1>
             <p>I would love to connect with you for a free 30 minute intro call.</p>
             <form data-netlify="true" method="post" name="contact">
+                <input type="hidden" name="contact" value="contact" />
+
                 <fieldset class="form-group">
                     <input type="text" name="name" id="name-input" required placeholder=" ">
                     <label for="name-input">Name</label>

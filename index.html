@@ -11,6 +11,15 @@
 
 <body>
   <div id="app"></div>
+  <!-- : included so netlify will detect -->
+  <form hidden data-netlify="true" method="post" name="contact">
+    <input type="text" name="name" id="name-input" required>
+    <input type="text" name="pronouns" id="pronouns-input" required>
+    <input type="email" name="email" id="email-input" required>
+    <textarea name="message" id="message-input" rows="8" required></textarea>
+
+    <button class="submit" type="submit">Submit</button>
+  </form>
   <script type="module" src="/src/main.js"></script>
 </body>
 
