@@ -1,3 +1,19 @@
+<template>
+  <main>
+    <NavBar :home="true" />
+    <div class="title-card">
+      <div class="text-container blur-background" ref="textContainer">
+        <h1>Somatic Experiencing Therapy and Bodywork</h1>
+
+        <RouterLink class="link-hover learn-more" to="/about">Learn More</RouterLink>
+      </div>
+      <img src="../assets/images/raphael-wild-unsplash.jpg" alt="" srcset="">
+    </div>
+
+
+  </main>
+</template>
+
 <script>
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
@@ -36,21 +52,6 @@ export default {
 }
 </script>
 
-<template>
-  <main>
-    <NavBar :home="true" />
-    <div class="title-card">
-      <div class="text-container blur-background" ref="textContainer">
-        <h1>Somatic Experiencing Therapy and Bodywork</h1>
-
-        <RouterLink class="link-hover learn-more" to="/about">Learn More</RouterLink>
-      </div>
-      <img src="../assets/images/raphael-wild-unsplash.jpg" alt="" srcset="">
-    </div>
-
-
-  </main>
-</template>
 
 <style scoped lang="scss">
 @layer component {

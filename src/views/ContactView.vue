@@ -1,18 +1,10 @@
-<script>
-import NavBar from '../components/NavBar.vue';
-
-export default {
-    components: { NavBar }
-}
-</script>
-
 <template>
     <NavBar />
     <section class="contact-container">
         <div class="section-wrapper">
             <h1>Contact</h1>
             <p>I would love to connect with you for a free 30 minute intro call.</p>
-            <form netlify method="POST" name="contact">
+            <form data-netlify="true" method="post" name="contact">
                 <fieldset class="form-group">
                     <input type="text" name="name" id="name-input" required placeholder=" ">
                     <label for="name-input">Name</label>
@@ -37,6 +29,14 @@ export default {
         </div>
     </section>
 </template>
+
+<script>
+import NavBar from '../components/NavBar.vue';
+
+export default {
+    components: { NavBar }
+}
+</script>
 
 <style scoped lang="scss">
     @layer component {
