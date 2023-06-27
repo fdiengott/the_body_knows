@@ -12,7 +12,7 @@ export default {
         <div class="section-wrapper">
             <h1>Contact</h1>
             <p>I would love to connect with you for a free 30 minute intro call.</p>
-            <form data-netlify="true" method="POST" name="contact">
+            <form netlify method="POST" name="contact">
                 <fieldset class="form-group">
                     <input type="text" name="name" id="name-input" required placeholder=" ">
                     <label for="name-input">Name</label>
@@ -88,7 +88,6 @@ export default {
                 background-color: var(--color-bg);
                 font-weight: 600;
                 font-size: 14px;
-                color: var(--color-accent);
             }
 
             textarea:focus + label {

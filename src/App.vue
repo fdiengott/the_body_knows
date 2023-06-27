@@ -17,6 +17,7 @@ export default {
   #app-wrapper {
     position: relative;
     height: 100vh;
+    height: 100dvh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;

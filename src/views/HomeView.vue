@@ -123,20 +123,6 @@ export default {
       &:hover::after {
         background-color: var(--color-primary);
       }
-
-      // &::before {
-      //   content: '';
-      //   display: block;
-      //   width: 0;
-      //   height: 3px;
-      //   margin-left: auto;
-      //   transition: var(--default-transition-speed) all linear;
-      //   background-color: var(--color-primary);
-      // }
-
-      // &:hover::before {
-      //   width: 100%;
-      // }
     }
   }
 }

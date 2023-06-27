@@ -1,11 +1,12 @@
 <template>
   <div class="main-layout">
     <NavBar />
+    <section>
+      <h1>Meet Josephine</h1>
+      <img class="headshot" src="../assets/images/Jo_pic_3.jpg" alt="">
+    </section>
     <main class="about">
-      <section class="image-banner">
-        <h1>Meet Josephine</h1>
-        <img class="headshot" src="../assets/images/Jo_pic_3.jpg" alt="">
-      </section>
+      <section class="vertical-offset-image"></section>
       <section>
         <div class="section-wrapper">
           <p>I am a Brooklyn-based Somatic Trauma Practitioner, Bodyworker and Educator.  <b>I combine Somatic Experiencing with Bodywork and Voice/Movement Education to help clients connect with their bodies, and move through stress and trauma.</b></p>
@@ -45,7 +46,7 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
   @layer view {
     .main-layout {
       display: grid;
@@ -71,6 +72,10 @@ export default {
       &.secondary {
         filter: brightness(1.2);
       }
+    }
+
+    .vertical-offset-image {
+      margin-block-end: var(--image-banner-spacing);
     }
   }
 </style>

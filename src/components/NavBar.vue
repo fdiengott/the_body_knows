@@ -11,7 +11,7 @@
                         <li><RouterLink class="link-hover" to="/" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Home</RouterLink></li>
                         <li><RouterLink class="link-hover" to="/offerings" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Offerings</RouterLink></li>
                         <li><RouterLink class="link-hover" to="/about" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Meet Josephine</RouterLink></li>
-                        <li><RouterLink class="link-hover" to="/fees" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Fees</RouterLink></li>
+                        <li><RouterLink class="link-hover" to="/pricing" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Pricing</RouterLink></li>
                         <li><RouterLink class="link-hover" to="/contact" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Book a Free Consultation</RouterLink></li>
                     </ul>
                 </div>
@@ -51,7 +51,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @layer component {
     header {
         position: sticky;
@@ -66,6 +66,7 @@ export default {
 
         .nav {
             background: none;
+            border-bottom: none;
         }
 
         .nav-links {
@@ -75,6 +76,10 @@ export default {
             a {
                 padding: 5px 20px;
             }
+        }
+
+        .home-link {
+            font-size: var(--fs-500);
         }
     }
 
@@ -89,6 +94,7 @@ export default {
         background-color: var(--color-primary);
         color: var(--white);
         height: 100%;
+        border-bottom: 1px solid var(--color-bg);
     }
 
     .nav > a {
@@ -134,10 +140,6 @@ export default {
         padding: 20px;
         text-align: end;
         white-space: nowrap;
-    }
-
-    .home .home-link {
-        font-size: var(--fs-500);
     }
 
     /* .nav-links li::after {

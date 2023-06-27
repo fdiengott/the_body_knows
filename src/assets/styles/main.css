@@ -132,10 +132,14 @@
     }
 
     & + * {
-      margin-top: 2em;
+      margin-top: var(--image-banner-spacing);
     }
   }
 
+  .main-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
 
   /* Utilities */
 

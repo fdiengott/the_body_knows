@@ -1,13 +1,13 @@
 <template>
     <div class="main-layout">
         <NavBar />
-        <section class="title-container image-banner">
+        <section class="image-banner">
             <h1>Offerings</h1>
             <img src="../assets/images/rosemary.jpg" alt="A short leafed rosemary plant">
         </section>
         <main>
             <aside class="sticky-aside">
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#somatic-work">What is Somatic Work</a></li>
                     <li><a href="#somatic-experiencing">Somatic Experiencing</a></li>
                     <li><a href="#reiki">Reiki</a></li>
@@ -31,10 +31,15 @@
                     <p>In my personal experience, SE has empowered me to create a deep relationship with my body and to trust and care for myself in new ways. <b>By learning how to listen more deeply, patterns of trauma and overwhelm find their way toward softening and resolution.</b> Our capacity for connection with others becomes more engaged. We experience more of what it feels like to be alive and develop an environment of curiosity for the experiences of our body. <b>With increased resilience, we can find ways to move through each day's inevitable challenges with less discomfort and more support from the inside out.</b></p>
                 </div>
             </section>
-            <!-- <CardDivider :primary="true" /> -->
             <section class="primary" id="reiki">
                 <div class="section-wrapper">
                     <h2>Other Modalities I Integrate with Somatic Experiencing</h2>
+                    <ul class="other-modalities-links nav-links">
+                        <li><a href="#reiki">Reiki</a></li>
+                        <li><a href="#voice">Voice</a></li>
+                        <li><a href="#movement-yoga">Movement/Yoga</a></li>
+                    </ul>
+
                     <h3>Reiki</h3>
                     <p>
                         I combine reiki with Somatic Experiencing as a tool for supporting the nervous system. Reiki is a form of hands-on (or distance) energy healing that originated in Japan, that brings relief from suffering and supports overall health.
@@ -49,6 +54,7 @@
             </section>
             <section id="voice">
                 <div class="section-wrapper">
+                    <a class="chevron-link" href="#reiki"></a>
                     <h3>Voice</h3>
                     <p>
                         Connecting with the voice can be a powerful tool in working with stress and trauma.  We may make contact with the voice through humming, sighing, and for those who are interested, singing.  Working with the voice in an empowered way can be particularly effective for those whose voice has ever felt stifled.
@@ -60,6 +66,7 @@
             </section>
             <section class="primary" id="movement-yoga">
                 <div class="section-wrapper">
+                    <a class="chevron-link primary" href="#reiki"></a>
                     <h3>Movement/Yoga</h3>
                     <p>
                         Sometimes when we feel stuck, it proves useful to listen to how our bodies would like to move.  And in times of overwhelm, movement can be a wonderful tool that we can do almost anywhere to help our body to regulate.  We may explore using movement in our sessions to help feel sensation and release tension.  For those for whom Yoga is a supportive practice, we may also use Yoga postures to create spaciousness or practice working with activation.
@@ -117,8 +124,6 @@ export default {
         }
 
         aside:not(.sticky-aside) {
-            // height: 40rem;
-
             img {
                 object-fit: cover;
                 object-position: center;
@@ -128,26 +133,58 @@ export default {
 
         section:not(.primary) .section-wrapper {
             padding-block: 0;
-            margin-block: 0;
+            // margin-block-start: 2rem;
         }
 
-        // .title-container {
-        //     position: relative;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     transform-style: preserve-3d;
-        //     z-index: -1;
+        .primary + section {
+            margin-block-start: 5rem;
+        }
 
-        //     img {
-        //         position: absolute;
-        //         height: 100%;
-        //         width: 100%;
-        //         z-index: -1;
-        //         object-fit: cover;
-
-        //         transform: translateZ(-9px) scale(2);
-        //     }
+        // .section-wrapper {
+        //     margin-block-start: 5rem;
         // }
+
+        .other-modalities-links {
+            display: block;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-links li {
+            opacity: 0.5;
+
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            transition: 200ms all ease;
+
+            > a {
+                display: block;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        @media (width > 1200px){
+            .other-modalities-links {
+                display: none;
+            }
+        }
+
+        .chevron-link {
+            text-align: center;
+            display: block;
+            height: 1rem;
+            background-color: var(--color-text);
+
+            -webkit-mask: url(../assets/icons/chevron-up.svg) no-repeat center;
+            mask: url(../assets/icons/chevron-up.svg) no-repeat center;
+
+            &.primary {
+                background-color: var(--color-accent);
+            }
+        }
+
     }
 </style>
