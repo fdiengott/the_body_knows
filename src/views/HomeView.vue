@@ -88,6 +88,8 @@ export default {
   }
 
   .text-container {
+    --transition-delay: 300ms;
+
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -97,7 +99,7 @@ export default {
       opacity: 0;
       filter: blur(3px);
       transition: filter 1s ease-in-out, opacity 1s ease-in-out;
-      transition-delay: 300ms;
+      transition-delay: var(--transition-delay);
     }
 
     &.show {
@@ -108,7 +110,7 @@ export default {
 
         &:nth-child(2) {
           display: block;
-          transition-delay: 200ms;
+          transition-delay: calc(var(--transition-delay) + 200ms);
         }
       }
     }
