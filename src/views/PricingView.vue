@@ -3,7 +3,7 @@
         <NavBar />
         <section class="image-banner">
             <h1>Pricing</h1>
-            <img src="../assets/images/potted_plants.jpg" alt="A view from above of a dozen young seedlings sprouting from pots of soil">
+            <img alt="A view from above of a dozen young seedlings sprouting from pots of soil" loading="lazy" src="../assets/images/potted_plants.jpg">
         </section>
         <main>
             <section>

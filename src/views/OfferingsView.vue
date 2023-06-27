@@ -3,7 +3,7 @@
         <NavBar />
         <section class="image-banner">
             <h1>Offerings</h1>
-            <img src="../assets/images/rosemary.jpg" alt="A short leafed rosemary plant">
+            <img alt="A short leafed rosemary plant" loading="lazy" src="../assets/images/rosemary.jpg">
         </section>
         <main>
             <aside class="sticky-aside">
@@ -28,7 +28,7 @@
             <section id="somatic-experiencing">
                 <div class="section-wrapper">
                     <h2>Somatic Experiencing (SE™)</h2>
-                    <img src="../assets/images/open_book.jpg" alt="A closeup image of an open book with a sewn in bookmark">
+                    <img alt="A closeup image of an open book with a sewn in bookmark" loading="lazy" src="../assets/images/open_book.jpg">
 
                     <p>Somatic Experiencing (SE™) is a “body-oriented therapeutic model for healing trauma and stress. It is based on a multidisciplinary intersection of physiology, psychology, ethology, biology, neuroscience, indigenous healing practices, and medical biophysics and has been clinically applied for more than four decades. It is the life’s work of Dr. Peter A. Levine.”</p>
 

@@ -3,7 +3,7 @@
     <NavBar />
     <section>
       <h1>Meet Josephine</h1>
-      <img class="headshot" src="../assets/images/Jo_pic_3.jpg" alt="">
+      <img alt="" class="headshot" loading="lazy" src="../assets/images/Jo_pic_3.jpg">
     </section>
     <main class="about">
       <section class="vertical-offset-image"></section>

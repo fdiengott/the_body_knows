@@ -7,7 +7,7 @@
 
         <RouterLink class="link-hover learn-more" to="/about">Learn More</RouterLink>
       </div>
-      <img src="../assets/images/raphael-wild-unsplash.jpg" alt="" srcset="">
+      <img alt="" loading="lazy" src="../assets/images/raphael-wild-unsplash.jpg">
     </div>
 
 
