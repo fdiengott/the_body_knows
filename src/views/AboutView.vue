@@ -23,7 +23,7 @@
         </div>
         <div class="vertical-offset"></div>
         <aside>
-          <img class="headshot secondary" src="../assets/images/Jo_pic_2.jpg" alt="">
+          <img alt="" class="headshot secondary" loading="lazy" src="../assets/images/Jo_pic_2.jpg">
         </aside>
       </section>
       <section>
