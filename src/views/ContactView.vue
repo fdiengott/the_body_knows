@@ -48,7 +48,7 @@ export default {
             console.log(body);
 
             try {
-                const res = await fetch(form.action, {
+                const res = await fetch('/', {
                     "Content-Type": "application/x-www-form-urlencoded",
                     method: 'POST',
                     body
