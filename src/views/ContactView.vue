@@ -44,20 +44,18 @@ export default {
             const form = $event.target;
             const body = new URLSearchParams(new FormData(form)).toString();
 
-            console.log(new FormData(form));
-            console.log(body);
-
             try {
-                const res = await fetch('/', {
-                    "Content-Type": "application/x-www-form-urlencoded",
+                const response = await fetch('/', {
                     method: 'POST',
                     body
-                })
+                });
 
-                if (res.ok) {
+                console.log(response);
+
+                if (response.ok) {
                     this.$router.push({ name: 'success' })
                 } else {
-                    this.$router.push({ name: 'error' })
+                    throw response;
                 }
             } catch (err) {
                 console.error(err)
