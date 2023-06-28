@@ -6,6 +6,7 @@ import PricingView from '#views/PricingView.vue'
 import ContactView from '#views/ContactView.vue'
 import SuccessView from '#views/SuccessView.vue'
 import ErrorView from '#views/ErrorView.vue'
+import PageNotFoundView from '#views/PageNotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,14 +37,18 @@ const router = createRouter({
       component: ContactView
     },
     {
-      path: '/success',
+      path: '/form-success',
       name: 'success',
       component: SuccessView
     },
     {
-      path: '/404',
+      path: '/form-failure',
       name: 'error',
       component: ErrorView
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      component: PageNotFoundView
     }
   ],
   scrollBehavior() {
