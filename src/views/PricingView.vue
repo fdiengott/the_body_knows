@@ -3,7 +3,7 @@
         <NavBar />
         <section class="image-banner">
             <h1>Pricing</h1>
-            <img alt="A view from above of a dozen young seedlings sprouting from pots of soil" loading="lazy" src="../assets/images/potted_plants.jpg">
+            <img alt="Four small plastic pots hold young shoots of plants - several with dark soil as if recently watered. The top and bottom of the image show that there are more pots of soil above and below the ones we see clearly." loading="lazy" src="../assets/images/potted_plants.jpg">
         </section>
         <main>
             <section>

@@ -3,7 +3,7 @@
     <NavBar />
     <section>
       <h1>Meet Josephine</h1>
-      <img alt="" class="headshot" loading="lazy" src="../assets/images/Jo_pic_3.jpg">
+      <img alt="Therapist Josephine is seen with short hair and dangling wooden earrings gazing to the right with a soft smile. The background is soft, lush woods gently blurred." class="headshot" loading="lazy" src="../assets/images/Jo_pic_3.jpg">
     </section>
     <main class="about">
       <section class="vertical-offset-image"></section>
@@ -23,7 +23,7 @@
         </div>
         <div class="vertical-offset"></div>
         <aside>
-          <img alt="" class="headshot secondary" loading="lazy" src="../assets/images/Jo_pic_2.jpg">
+          <img alt="Therapist Josephine with short hair and dangling wooden earrings smiles broadly while looking at and touching white flowers in a squatting position.  She is surrounded by tall plants and grasses with woods in the background." class="headshot secondary" loading="lazy" src="../assets/images/Jo_pic_2.jpg">
         </aside>
       </section>
       <section>
@@ -39,15 +39,16 @@
         </div>
       </section>
     </main>
+    <FooterComponent />
   </div>
 </template>
 
 <script>
 import NavBar from '../components/NavBar.vue';
-
+import FooterComponent from '../components/FooterComponent.vue';
 
 export default {
-  components: { NavBar },
+  components: { NavBar, FooterComponent }
 }
 </script>
 

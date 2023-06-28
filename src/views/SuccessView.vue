@@ -8,3 +8,12 @@
         </div>
     </div>
 </template>
+
+
+<style scoped>
+    .form-submit-card-wrapper {
+        background-image: url('../assets/images/willow_vines.jpeg');
+        background-size: cover;
+        background-blend-mode: overlay;
+    }
+</style>
