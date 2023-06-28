@@ -4,7 +4,7 @@
         <div class="section-wrapper">
             <h1>Contact</h1>
             <p>I would love to connect with you for a free 30 minute intro call.</p>
-            <form action="/success/" method="post" name="contact-form">
+            <form action="/success" method="post" name="contact-form">
                 <input type="hidden" name="form-name" value="contact-form" />
 
                 <fieldset class="form-group">
