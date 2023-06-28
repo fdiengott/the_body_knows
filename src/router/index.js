@@ -30,7 +30,17 @@ const router = createRouter({
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('#views/ContactView.vue')
+      component: ContactView
+    },
+    {
+      path: '/success',
+      name: 'success',
+      component: SuccessView
+    },
+    {
+      path: '/404',
+      name: 'error',
+      component: ErrorView
     }
   ],
   scrollBehavior() {

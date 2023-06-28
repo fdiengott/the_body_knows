@@ -25,7 +25,10 @@
     --white-soft: hsl(50, 50%, 92%);
     --black: hsl(0, 0%, 16%);
     --black-transparent: hsl(0, 0%, 16%, 38%);
-    --green-soft: hsl(129, 19%, 60%);
+    --green-soft-hue: 129;
+    --green-soft-saturation: 19%;
+    --green-soft-lightness: 60%;
+    --green-soft: hsl(var(--green-soft-hue), var(--green-soft-saturation), var(--green-soft-lightness));
 
     --color-bg: var(--white-soft);
     --color-primary: var(--green-soft);
