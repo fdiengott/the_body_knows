@@ -45,7 +45,7 @@ export default {
             const body = new URLSearchParams(new FormData(form)).toString();
 
             try {
-                const response = await fetch('/', {
+                const response = await fetch(form.action, {
                     method: 'POST',
                     body
                 });
