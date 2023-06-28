@@ -7,7 +7,7 @@
         </section>
         <main>
             <aside class="sticky-aside">
-                <ul class="nav-links">
+                <ul class="in-page-nav-links">
                     <li><a href="#somatic-work">What is Somatic Work</a></li>
                     <li><a href="#somatic-experiencing">Somatic Experiencing</a></li>
                     <li><a href="#reiki">Reiki</a></li>
@@ -84,7 +84,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @layer view {
         .image-banner h1 {
             z-index: 1;
@@ -141,7 +141,7 @@ export default {
             justify-content: space-around;
         }
 
-        .nav-links li {
+        .in-page-nav-links li {
             opacity: 0.5;
 
             border-bottom-width: 3px;

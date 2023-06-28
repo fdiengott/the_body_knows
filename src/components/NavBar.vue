@@ -12,7 +12,7 @@
                         <li><RouterLink class="link-hover" to="/offerings" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Offerings</RouterLink></li>
                         <li><RouterLink class="link-hover" to="/about" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Meet Josephine</RouterLink></li>
                         <li><RouterLink class="link-hover" to="/pricing" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Pricing</RouterLink></li>
-                        <li><RouterLink class="link-hover" to="/contact" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Book a Free Consultation</RouterLink></li>
+                        <li><RouterLink class="link-hover" to="/contact" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Contact</RouterLink></li>
                     </ul>
                 </div>
             </div>
@@ -118,7 +118,7 @@ export default {
         transform: translate(120%);
         display: flex;
         flex-direction: column;
-        min-width: 200px;
+        min-width: 16ch;
         right: calc(-1 * var(--nav-inline-padding));
         top: var(--nav-block-padding);
         align-items: end;
@@ -133,6 +133,7 @@ export default {
         display: flex;
         justify-content: end;
         width: 100%;
+        padding-block: 0.2rem;
     }
 
     .nav-links a {
@@ -141,36 +142,5 @@ export default {
         text-align: end;
         white-space: nowrap;
     }
-
-    /* .nav-links li::after {
-        content: '';
-        position: absolute;
-        background-color: var(--color-accent);
-        top: 0;
-        right: 10px;
-
-        width: 20px;
-        width: 3px;
-        height: 100%;
-        opacity: 0;
-        transform: translate(10px);
-
-        transition: var(--default-transition-speed) all linear;
-    } */
-
-    // .nav-links li:hover  {
-    //     color: var(--color-accent);
-    // }
-    /* .nav-links li:hover::after {
-        opacity: 1;
-        transform: translate(0);
-        transform: translate(calc(-1 * var(--navbar-width)));
-        width: 3px;
-    } */
-
-    /* .nav-links a:hover {
-        background-color: var(--color-accent);
-        color: var(--color-bg);
-    } */
 }
 </style>
