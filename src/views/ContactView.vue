@@ -4,7 +4,7 @@
         <div class="section-wrapper">
             <h1>Contact</h1>
             <p>I would love to connect with you for a free 30 minute intro call.</p>
-            <form action="/success" method="post" name="contact-form">
+            <form action="/form-success" method="post" name="contact-form" @submit.prevent="handleFormSubmit">
                 <input type="hidden" name="form-name" value="contact-form" />
 
                 <fieldset class="form-group">
@@ -38,7 +38,34 @@ import NavBar from '../components/NavBar.vue';
 import FooterComponent from '../components/FooterComponent.vue';
 
 export default {
-    components: { NavBar, FooterComponent }
+    components: { NavBar, FooterComponent },
+    methods: {
+        async handleFormSubmit($event) {
+            const form = $event.target;
+            const body = new URLSearchParams(new FormData(form)).toString();
+
+            console.log(new FormData(form));
+            console.log(body);
+
+            try {
+                const res = await fetch(form.action, {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    method: 'POST',
+                    body
+                })
+
+                if (res.ok) {
+                    this.$router.push({ name: 'success' })
+                } else {
+                    this.$router.push({ name: 'error' })
+                }
+            } catch (err) {
+                console.error(err)
+
+                this.$router.push({ name: 'error' })
+            }
+        }
+    }
 }
 </script>
 
