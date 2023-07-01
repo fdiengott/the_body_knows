@@ -217,4 +217,26 @@
   .return-home:hover {
     background-color: hsl(var(--green-soft-hue), var(--green-soft-saturation), calc(var(--green-soft-lightness) + 20%));
   }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--white);
+    border-radius: 2rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    width: 90%;
+    background: var(--color-primary);
+    border-radius: 1rem;
+    border: 2px solid var(--white);
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    --color-primary: hsl(var(--green-soft-hue), var(--green-soft-saturation), calc(var(--green-soft-lightness) + 10%));
+  }
 }
