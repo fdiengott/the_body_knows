@@ -3,7 +3,7 @@
     <NavBar />
     <section>
       <h1>Meet Josephine</h1>
-      <img alt="Therapist Josephine is seen with short hair and dangling wooden earrings gazing to the right with a soft smile. The background is soft, lush woods gently blurred." class="headshot" loading="lazy" src="../assets/images/Jo_pic_3.jpg">
+      <img alt="Therapist Josephine is seen with short hair and dangling wooden earrings gazing to the right with a soft smile. The background is soft, lush woods gently blurred." class="headshot" loading="lazy" src="../assets/images/Jo_pic_1.webp">
     </section>
     <main class="about">
       <section class="vertical-offset-image"></section>
@@ -23,7 +23,7 @@
         </div>
         <div class="vertical-offset"></div>
         <aside>
-          <img alt="Therapist Josephine with short hair and dangling wooden earrings smiles broadly while looking at and touching white flowers in a squatting position.  She is surrounded by tall plants and grasses with woods in the background." class="headshot secondary" loading="lazy" src="../assets/images/Jo_pic_2.jpg">
+          <img alt="Therapist Josephine with short hair and dangling wooden earrings smiles broadly while looking at and touching white flowers in a squatting position.  She is surrounded by tall plants and grasses with woods in the background." class="headshot secondary" loading="lazy" src="../assets/images/Jo_pic_2.webp">
         </aside>
       </section>
       <section>

@@ -7,7 +7,7 @@
 
         <RouterLink class="link-hover learn-more" to="/about">Learn More</RouterLink>
       </div>
-      <img alt="A branch of green Gingko leaves, where some are illuminated by the sun. More leaves appear blurry in the background." loading="lazy" src="../assets/images/raphael-wild-unsplash.jpg">
+      <img alt="A branch of green Gingko leaves, where some are illuminated by the sun. More leaves appear blurry in the background." loading="lazy" src="../assets/images/raphael-wild-unsplash.webp">
     </div>
   </main>
 </template>
