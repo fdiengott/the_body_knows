@@ -3,7 +3,15 @@
     <section class="contact-container">
         <div class="section-wrapper">
             <h1>Contact</h1>
-            <p>I would love to connect with you for a free 30 minute intro call.</p>
+
+            <div class="section-header">For Individual Sessions:</div>
+            <p>I would love to connect with you for a free 20 minute intro call. When you reach out, please tell me a little about what kind of <a href="/offerings">sessions</a> you are interested in, where you fall on the <a href="/pricing">sliding scale</a> and whether you are looking for virtual, in-person or both. Also please note that I am not a psychotherapist, but rather integrate Somatic Experiencing, Reiki and Voice in my work.</p>
+
+            <div class="section-header">For Reiki Training:</div>
+            <p>If you're ready to register, reach out and I will send along payment info and training logistics.</p>
+
+            <p>Questions? Feel free to send along questions to be answered via email or request a 10-15 min Zoom.</p>
+
             <form action="/form-success/" method="post" name="contact-form" @submit.prevent="handleFormSubmit">
                 <input type="hidden" name="form-name" value="contact-form" />
 
@@ -73,6 +81,15 @@ export default {
             margin: 0 auto;
         }
 
+        .section-header {
+            font-size: var(--fs-500);
+            font-weight: 500;
+        }
+
+        .section-header + p {
+            margin-block-start: 0;
+        }
+
         form {
             margin-block-start: 1.5rem;
         }
@@ -136,7 +153,6 @@ export default {
             align-items: center;
             border-radius: 5px;
             background: var(--color-primary);
-            box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             border: none;
             cursor: pointer;
@@ -169,6 +185,7 @@ export default {
 
             &:hover {
                 transform: scale(1.05);
+                box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
 
                 span {
                     color: var(--color-text);

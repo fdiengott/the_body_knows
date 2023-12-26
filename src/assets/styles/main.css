@@ -137,6 +137,11 @@
     }
   }
 
+  section a {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
   /* Utilities */
 
   .link-hover {
