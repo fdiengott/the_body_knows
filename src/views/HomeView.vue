@@ -3,7 +3,11 @@
     <NavBar :home="true" />
     <div class="title-card">
       <div class="text-container blur-background" ref="textContainer">
-        <h1>Somatic Experiencing Therapy and Bodywork</h1>
+        <h1>
+          <div>Somatic Experiencing</div>
+          <div>Reiki/Reiki Training</div>
+          <div>Voice</div>
+        </h1>
 
         <RouterLink class="link-hover learn-more" to="/about">Learn More</RouterLink>
       </div>
@@ -115,7 +119,7 @@ export default {
 
 
     .learn-more {
-      font-size: var(--fs-500);
+      font-size: var(--fs-600);
 
       &::after {
         width: 100%;
