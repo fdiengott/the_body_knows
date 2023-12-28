@@ -8,7 +8,7 @@
         <main>
             <section id="">
                 <div class="section-wrapper">
-                    <p>I am currently offering Reiki Level 1 training in a hybrid format with the first few hours online and a full Saturday in-person in Brooklyn.</p>
+                    <p>I am currently offering Reiki Level 1 training in a hybrid format with the first few hours online and a full Saturday in-person in Brooklyn. Reiki Level 2 and Masters Training will be offered in the future.``</p>
 
                     <p>Reiki Training is for everyone whether or not you have received Reiki before. In the training, you will be attuned to the Reiki energy and learn how to bring this practice into your every day life.</p>
                 </div>
@@ -35,11 +35,11 @@
                     <h2>Schedule</h2>
                     <p>The training takes place over 2 days (10.5 hours total including breaks)</p>
 
-                    <h3>Day One:</h3>
-                    <p>Wednesday April 3rd 6pm-9:30pm (via Zoom/will be recorded if some students can’t make it, although live attendance is suggested)</p>
+                    <h3>Day One</h3>
+                    <p>Wednesday April 3rd: 6pm-9:30pm (via Zoom/will be recorded if some students can’t make it, although live attendance is suggested)</p>
 
-                    <h3>Day Two:</h3>
-                    <p>Saturday April 6th 11am-6pm in Clinton Hill, Brooklyn</p>
+                    <h3>Day Two</h3>
+                    <p>Saturday April 6th: 11am-6pm in Clinton Hill, Brooklyn</p>
 
                     <p>Investment: $275</p>
                 </div>
@@ -106,7 +106,7 @@ export default {
         list-style: outside;
     }
 
-    h3 + p {
+    :where(h2, h3) + p {
         margin-block-start: 0;
     }
 }
