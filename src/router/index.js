@@ -7,6 +7,7 @@ import ContactView from '#views/ContactView.vue'
 import SuccessView from '#views/SuccessView.vue'
 import ErrorView from '#views/ErrorView.vue'
 import PageNotFoundView from '#views/PageNotFoundView.vue'
+import ReikiTrainingsView from '#views/ReikiTrainingsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,6 +26,11 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: AboutView
+    },
+    {
+      path: '/trainings',
+      name: 'trainings',
+      component: ReikiTrainingsView
     },
     {
       path: '/pricing',
