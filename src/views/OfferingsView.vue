@@ -21,10 +21,8 @@
                     <!-- TODO change this header text -->
                     <h2>What I offer</h2>
 
-                    I offer 3 different kinds of sessions:
-                    Further information about each modality I integrate can be found below.
-
-                    <div class="vertical-offset-lg"></div>
+                    <div>I offer 3 different kinds of sessions:</div>
+                    <div>Further information about each modality I integrate can be found below.</div>
 
                     <h3>Somatic Experiencing (Virtual and In-Person):</h3>
 
