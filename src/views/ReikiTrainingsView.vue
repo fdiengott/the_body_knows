@@ -105,9 +105,5 @@ export default {
     .bulleted-list {
         list-style: outside;
     }
-
-    :where(h2, h3) + p {
-        margin-block-start: 0;
-    }
 }
 </style>

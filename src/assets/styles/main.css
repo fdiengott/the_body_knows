@@ -5,9 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 @layer base {
-  /* TODO make the scrollbar look nice */
-
-
   body,
   input,
   textarea {
@@ -79,8 +76,12 @@
     padding-block: var(--section-block-padding);
   }
 
-  section p:not(:first-child) {
+  p {
     margin-block: 2rem;
+  }
+
+  :is(h2, h3)+p {
+    margin-block-start: 0;
   }
 
   section.primary::before,
@@ -185,6 +186,9 @@
 
   .vertical-offset {
     margin-bottom: 4rem;
+  }
+  .vertical-offset-lg {
+    margin-bottom: 8rem;
   }
 
   .form-submit-card-wrapper {
