@@ -15,18 +15,34 @@
                     <li><a href="#movement-yoga">Movement/Yoga</a></li>
                 </ul>
             </aside>
-            <section id="somatic-work">
+
+            <section>
                 <div class="section-wrapper">
-                    <h2>What is Somatic Work?</h2>
-                    <p>Somatic practices like Somatic Experiencing explore how our feelings, memories, conscious thoughts, behaviors and sensations are all experienced in our body. These modalities differ from talk therapy. <b>Rather than prioritizing only speaking the story of the events that have affected us, we make space for the felt experience of the body.</b></p>
+                    <!-- TODO change this header text -->
+                    <h2>What I offer</h2>
 
-                    <p>This might look like noticing sensations in the body connected to thoughts that cause us discomfort and helping the body learn to feel safe. <b>This work is purposely slow because when our body is holding trauma responses, what it needs is time, space and support.</b> We will take our time to help the body process what it is holding physiologically.</p>
+                    <div>I offer 3 different kinds of sessions:</div>
+                    <div>Further information about each modality I integrate can be found below.</div>
 
-                    <p>With my background as an educator, I believe in teaching my clients about how their nervous system functions. <b>I find that understanding why our bodies behave the way they do can be deeply relieving and empowering. Our bodies are not defective, they are protective.</b></p>
+                    <h3>Somatic Experiencing (Virtual and In-Person):</h3>
+
+                    <p>In Somatic Experiencing, we learn to connect with the way the body communicates through sensation. Rather than only speaking the story of events that have affected us, we make space for the felt story of the body. I educate my clients about how their nervous system works and the way that survival responses can get stuck in the physiology.</p>
+                    <p>Then, in a slow, gentle way, we explore ways of helping the body process and resolve what it is holding. We make space for increased resilience, so that we can move through each day with less discomfort and more support from the inside out.</p>
+                    <p>We may also use Reiki to support the body if there is overwhelm, or to integrate the Somatic Experiencing work.</p>
+
+                    <h3>Somatic Voice (Virtual Only):</h3>
+
+                    <p>In Somatic Voice sessions, we explore the therapeutic experience of singing. These sessions are perfect for people who have never had voice lessons before, but want to befriend their voice, or for those with prior voice training who are seeking something more trauma-informed.</p>
+                    <p>For some, voice work can be vulnerable and bring up emotion, and in some cases, be linked with stress and trauma the body has experienced. These sessions are a space where the emotions and body sensations are welcome. Part of the process of finding the most joyful and easeful expression of the voice, is to support the stuff that comes up around singing (i.e. anxiety, shame, fear, sadness, relief, play, hope etc.). Somatic Voice is holistic in practice. The entire person is respected in the process of connecting with the voice.</p>
+
+                    <h3>Trauma-Informed Reiki (Virtual and In-Person):</h3>
+
+                    <p>Trauma-Informed Reiki sessions incorporate Somatic Experiencing with Reiki. These sessions include noticing sensations and emotions the body is holding and then entering into the Reiki practice with intention to help the body process, rest, and receive care. Depending on the session, we may communicate verbally during the Reiki portion, or if the client chooses, we might practice quietly or with guided visualization and then take time to process the session with somatic language afterwards.</p>
                 </div>
             </section>
             <section id="somatic-experiencing">
                 <div class="section-wrapper">
+                    <!-- > this will probably move into next section -->
                     <h2>Somatic Experiencing (SE™)</h2>
                     <img alt="A leather-bound book opened in the middle with the top of the pages showing in gold. The book has a satiny bookmark in its open page with blurred grass in the background." loading="lazy" src="../assets/images/open_book.webp">
 
@@ -39,8 +55,10 @@
             </section>
             <section class="primary" id="reiki">
                 <div class="section-wrapper">
-                    <h2>Other Modalities I Integrate with Somatic Experiencing</h2>
+                    <!-- TODO change this header text -->
+                    <h2>More detail on what I offer</h2>
                     <ul class="other-modalities-links nav-links">
+                        <!-- TODO update these -->
                         <li><a href="#reiki">Reiki</a></li>
                         <li><a href="#voice">Voice</a></li>
                         <li><a href="#movement-yoga">Movement/Yoga</a></li>
@@ -146,8 +164,7 @@ export default {
         .in-page-nav-links li {
             opacity: 0.5;
 
-            border-bottom-width: 3px;
-            border-bottom-style: solid;
+            border-bottom: 1px solid var(--black);
             transition: 200ms all ease;
 
             > a {

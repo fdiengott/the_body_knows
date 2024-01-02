@@ -10,7 +10,7 @@
             <div class="section-header">For Reiki Training:</div>
             <p>If you're ready to register, reach out and I will send along payment info and training logistics.</p>
 
-            <p>Questions? Feel free to send along questions to be answered via email or request a 10-15 min Zoom.</p>
+            <p>Questions? Feel free to send questions to be answered via email or request a 15 min Zoom.</p>
 
             <form action="/form-success/" method="post" name="contact-form" @submit.prevent="handleFormSubmit">
                 <input type="hidden" name="form-name" value="contact-form" />
