@@ -9,7 +9,7 @@
                 <div class="navbar-container">
                     <ul class="nav-links" :class="{ isActive: isSidebarActive }">
                         <li><RouterLink class="link-hover" to="/" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Home</RouterLink></li>
-                        <li><RouterLink class="link-hover" to="/offerings" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Offerings</RouterLink></li>
+                        <li><RouterLink class="link-hover" to="/offerings" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Work with Me</RouterLink></li>
                         <li><RouterLink class="link-hover" to="/about" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Meet Josephine</RouterLink></li>
                         <li><RouterLink class="link-hover" to="/trainings" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Reiki Trainings</RouterLink></li>
                         <li><RouterLink class="link-hover" to="/pricing" v-on:click="closeSidebar" :tabindex="isSidebarActive ? 0 : -1">Pricing</RouterLink></li>
