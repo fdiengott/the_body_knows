@@ -27,11 +27,21 @@
       <section>
         <div class="section-wrapper">
           <h2>Who I Work With</h2>
-  <p><b>I work with people who are ready to begin to develop or continue to strengthen their relationship to embodiment.</b></p>
+            <p><b>I work with people who are ready to begin to develop or continue to strengthen their relationship to embodiment.</b></p>
 
-  <p>I specialize in working with queer folks, care workers (birth workers, bodyworkers, parents, educators, therapists, healers etc.) and artists. With this said - my practice is open to all who feel ready to slowly develop compassion for whatever their body is holding.</p>
+            <p>I specialize in working with queer folks, care workers (birth workers, bodyworkers, parents, educators, therapists, healers etc.) and artists. With this said - my practice is open to all who feel ready to slowly develop compassion for whatever their body is holding.</p>
 
-  <p>As I am not a psychotherapist, some prior experience in either talk therapy or other contemplative practices can be helpful for clients of this work. Since we will focus on the story the body has to tell (in whatever kind of <a href="offerings">session</a> we are doing), it is helpful if some work has already been done on the cognitive level.</p>
+            <p>As I am not a psychotherapist, some prior experience in either talk therapy or other contemplative practices can be helpful for clients of this work. Since we will focus on the story the body has to tell (in whatever kind of <a href="offerings">session</a> we are doing), it is helpful if some work has already been done on the cognitive level.</p>
+        </div>
+      </section>
+      <section>
+        <div class="section-wrapper">
+          <h2>Where I Work</h2>
+          <ul class="work-list">
+            <li>I see clients nationally and internationally via Zoom</li>
+            <li>I have an office in Clinton Hill, Brooklyn</li>
+            <li>I am soon expanding to an office in midtown Manhattan</li>
+          </ul>
         </div>
       </section>
     </main>
@@ -51,6 +61,10 @@ export default {
 
 <style lang="scss" scoped>
   @layer view {
+    .work-list li {
+      list-style-type: "~ ";
+    }
+
     .main-layout {
       display: grid;
       grid-template-rows: auto 1fr auto;
