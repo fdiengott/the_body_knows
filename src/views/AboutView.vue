@@ -40,7 +40,7 @@
           <ul class="work-list">
             <li>I see clients nationally and internationally via Zoom</li>
             <li>I have an office in Clinton Hill, Brooklyn</li>
-            <li>I am soon expanding to an office in midtown Manhattan</li>
+            <li>I have an office in Midtown Manhattan located at Balance Arts Center</li>
           </ul>
         </div>
       </section>

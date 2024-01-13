@@ -2,7 +2,7 @@
     <div class="main-layout">
         <NavBar />
         <section class="image-banner">
-            <h1>Offerings</h1>
+            <h1>Work with Me</h1>
             <img alt="Two stocks of rosemary with blue flowers. In the background, there are two more stocks blurred with soft nature behind." loading="lazy" src="../assets/images/rosemary.webp">
         </section>
         <main>
@@ -12,6 +12,7 @@
                     <li><a href="#somatic-experiencing">Somatic Experiencing</a></li>
                     <li><a href="#voice">Voice</a></li>
                     <li><a href="#reiki">Reiki</a></li>
+                    <li><a href="#yoga">Yoga</a></li>
                 </ul>
             </aside>
 
@@ -41,7 +42,7 @@
             </section>
             <section class="primary" id="somatic-experiencing">
                 <div class="section-wrapper">
-                    <h2>Learn More about Each Practice</h2>
+                    <h2 class="vertical-offset">Learn More about Each Practice</h2>
                     <h3>Somatic Experiencing (SE™)</h3>
                     <img alt="A leather-bound book opened in the middle with the top of the pages showing in gold. The book has a satiny bookmark in its open page with blurred grass in the background." loading="lazy" src="../assets/images/open_book.webp">
 
@@ -70,6 +71,16 @@
                     <p><b>In my personal experience, Reiki is a soft place to land. It provides an opportunity to listen to the body and connect with a sense of safety and being supported, which is helpful for trauma resolution work.</b></p>
                 </div>
             </section>
+            <section id="yoga">
+                <div class="section-wrapper" id="yoga">
+                    <h3>Movement/Yoga</h3>
+                    <p>I have studied many forms of movement practice and am a Certified Yoga Teacher. Movement/Yoga organically make their way in my sessions as they are useful.</p>
+
+                    <p>We feel stuck, it proves useful to listen to how our bodies would like to move. <b>And in times of overwhelm, movement can be a wonderful tool that we can do almost anywhere to help our body to regulate.</b> We may explore using movement in our sessions to help feel sensation and release tension. For those for whom Yoga is a supportive practice, we may also use Yoga postures to create spaciousness or practice working with activation.</p>
+
+                    <p>In my experience, movement practice can be a wonderful medicine. And it is particularly useful that it is a constant tool we carry with us throughout our days. I believe in empowering my clients to be in relationship with their bodies' innate healing wisdom through their everyday movement outside of sessions if they feel comfortable.</p>
+                </div>
+            </section>
         </main>
         <FooterComponent />
     </div>
@@ -92,7 +103,6 @@ export default {
         }
 
         h1 {
-            font-size: var(--fs-700);
             font-weight: 600;
             margin-block: 0.5em;
         }
