@@ -20,7 +20,7 @@
 
                     <p>You can choose your session frequency (weekly, bi-weekly) or in some cases monthly, based on what is most financially comfortable/your preference.</p>
 
-                    <p>In the interest of accessibility, I save at least 1/3 of my practice for reduced-price sliding scale ($115-150) for those in need. These rates are available for folks who make less than 40K per year. Please take a look at the image below which highlights what rate you would pay based on your access to financial resources.</p>
+                    <p>In the interest of accessibility, I dedicate at least 60% of my practice to reduced-price sliding scale ($115-150) sessions for those in need. These rates are available for folks who make less than 40K per year. Please take a look at the image below which highlights what rate you would pay based on your access to financial resources.</p>
 
                     <img alt="" class="scale-up" loading="lazy" src="../assets/images/sliding-scale-image-edited.png">
                 </div>

@@ -10,8 +10,10 @@
                 <ul class="in-page-nav-links">
                     <li><a href="#somatic-work">What is Somatic Work</a></li>
                     <li><a href="#somatic-experiencing">Somatic Experiencing</a></li>
-                    <li><a href="#voice">Voice</a></li>
+                    <li><a href="#touch">Somatic Touch Therapy</a></li>
                     <li><a href="#reiki">Reiki</a></li>
+                    <li><a href="#voice">Voice</a></li>
+                    <li><a href="#movement-yoga">Movement/Yoga</a></li>
                 </ul>
             </aside>
 
@@ -27,7 +29,7 @@
 
                     <p>In Somatic Experiencing, we learn to connect with the way the body communicates through sensation. Rather than only speaking the story of events that have affected us, we make space for the felt story of the body. I educate my clients about how their nervous system works and the way that survival responses can get stuck in the physiology.</p>
                     <p>Then, in a slow, gentle way, we explore ways of helping the body process and resolve what it is holding. We make space for increased resilience, so that we can move through each day with less discomfort and more support from the inside out.</p>
-                    <p>We may also use Reiki to support the body if there is overwhelm, or to integrate the Somatic Experiencing work.</p>
+                    <p>We may use Somatic Touch and Reiki during the session to support regulation and integration for all systems of the body.</p>
 
                     <h3>2. Somatic Voice (Virtual Only):</h3>
 
@@ -52,12 +54,12 @@
                     <p>Our capacity for connection with others becomes more engaged. We experience more of what it feels like to be alive and develop an environment of curiosity for the experiences of our body.</p>
                 </div>
             </section>
-            <section id="voice">
+            <section id="touch">
                 <div class="section-wrapper">
-                    <h3>Voice</h3>
-                    <p>Connecting with the voice can be a powerful tool in working with stress and trauma. We will make contact with the voice through humming, sighing, and singing. <b>Working with the voice in an empowered way can be particularly effective for those whose voices have ever felt stifled.</b> I also work with folks while they are doing HRT in the process of staying connected to their voice as it changes.</p>
+                    <h3>Somatic Touch Therapy</h3>
+                    <p>In the words of therapist Melinda London <b>“Somatic Touch Therapy is a type of gentle touch which aims to support the stress response system of the body to decrease cortisol levels and increase the hormones of trust such as oxytocin.</b> Extreme stress can impact the entire body including the nervous system, immune function and vital organs, as well as our core emotional sense of safety and trust in the world.”</p>
 
-                    <p><b>For me, the voice practices I use on a daily basis help me to create a sense of space inside my body. With trauma, a lack of space inside (tension in the muscles, fascia, viscera etc.) often causes a lot of discomfort.</b> Being able to free my voice (with no expectation of how it sounds) has been a foundational part of my healing journey.</p>
+                    <p><b>Deeply attuned and embodied touch work can support the body to come back into regulation and to move forward with resilience from the inside out.</b> With touch as our earliest language (when we were infants before we could speak and even in utero), Somatic Touch Therapy can support our earliest imprints and at times offer in the here and now the kind of support we may have needed when we were younger.</p>
                 </div>
             </section>
             <section class="primary" id="reiki">
@@ -68,6 +70,23 @@
                     <p>Reiki can be used to work with physical pain, emotional distress and grief. It is also useful in tapping into our intuition and felt sense of the body and is an empowering practice of trusting in our bodies innate capacity to heal.</p>
 
                     <p><b>In my personal experience, Reiki is a soft place to land. It provides an opportunity to listen to the body and connect with a sense of safety and being supported, which is helpful for trauma resolution work.</b></p>
+                </div>
+            </section>
+            <section id="voice">
+                <div class="section-wrapper">
+                    <h3>Voice</h3>
+                    <p>Connecting with the voice can be a powerful tool in working with stress and trauma. We will make contact with the voice through humming, sighing, and singing. <b>Working with the voice in an empowered way can be particularly effective for those whose voices have ever felt stifled.</b> I also work with folks while they are doing HRT in the process of staying connected to their voice as it changes.</p>
+
+                    <p><b>For me, the voice practices I use on a daily basis help me to create a sense of space inside my body. With trauma, a lack of space inside (tension in the muscles, fascia, viscera etc.) often causes a lot of discomfort.</b> Being able to free my voice (with no expectation of how it sounds) has been a foundational part of my healing journey.</p>
+                </div>
+            </section>
+            <section class="primary" id="movement-yoga">
+                <div class="section-wrapper">
+                    <a class="chevron-link primary" href="#reiki"></a>
+                    <h3>Movement/Yoga</h3>
+                    <p>I have studied many forms of movement practice and am a Certified Yoga Teacher. Movement/Yoga organically make their way in my sessions as they are useful.</p>
+                    <p><b>When we feel stuck, it proves useful to listen to how our bodies would like to move. And in times of overwhelm, movement can be a wonderful tool that we can do almost anywhere to help our body to regulate.</b> We may explore using movement in our sessions to help feel sensation and release tension. For those for whom Yoga is a supportive practice, we may also use Yoga postures to create spaciousness or practice working with activation.</p>
+                    <p>In my experience, movement practice can be a wonderful medicine. And it is particularly useful that it is a constant tool we carry with us throughout our days. I believe in empowering my clients to be in relationship with their bodies' innate healing wisdom through their everyday movement outside of sessions if they feel comfortable.</p>
                 </div>
             </section>
         </main>
