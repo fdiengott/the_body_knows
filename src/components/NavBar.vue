@@ -73,6 +73,7 @@ export default {
         .nav-links {
             background: var(--black-transparent);
             border-radius: var(--border-radius) 0 0 var(--border-radius);
+            backdrop-filter: blur(4px);
 
             a {
                 padding: 5px 20px;
@@ -124,6 +125,15 @@ export default {
         top: var(--nav-block-padding);
         align-items: end;
         background-color: var(--color-primary);
+    }
+
+    header:not(.home) .nav-links {
+        border-style: solid;
+        border-color: var(--color-bg);
+        border-block-end-width: 1px;
+        border-inline-start-width: 1px;
+        border-block-start-width: 0;
+        border-inline-end-width: 0;
     }
 
     .nav-links.isActive {
