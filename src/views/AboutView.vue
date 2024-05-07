@@ -2,20 +2,20 @@
   <div class="main-layout">
     <NavBar />
     <section>
-      <h1>Meet Josephine</h1>
+      <h1>Meet Josephine SEP, CYT, RMT</h1>
       <img alt="Therapist Josephine is seen with short hair and dangling wooden earrings gazing to the right with a soft smile. The background is soft, lush woods gently blurred." class="headshot" loading="lazy" src="../assets/images/Jo_pic_1.webp">
     </section>
     <main class="about">
       <section class="vertical-offset-image"></section>
       <section>
         <div class="section-wrapper">
-          <p><b>I am a Somatic Experiencing Practitioner, Reiki Master and Voice Educator. I combine these modalities to help clients connect with their bodies, and move through stress and trauma.</b></p>
+          <p><b>I am a Somatic Experiencing Practitioner, Reiki Master and Voice Educator. I combine these modalities along with Somatic Touch Therapy, to help clients connect with their bodies, and move through stress and trauma.</b></p>
 
           <p>Originally from Maine, my body is a child of the forest and the sea.  I have made my way to cities in the last 10 years working in the performing arts as an actor, vocalist and creator.  My body-centered performing arts training was my first look into the physiological process of discovering and healing trauma in the body.</p>
 
           <p>I have also spent 7 years as an educator in voice, movement, yoga and writing.  I have taught in classrooms, homes and studios around NYC and internationally.  Working with children has taught me endlessly about curiosity and gentleness, which I bring to my therapeutic work.</p>
 
-          <p>My trauma education began in my study of Trauma-Informed Yoga and the transformative experience of teaching yoga to survivors of sexual trauma.  <b>Realizing that body-based trauma work was my deepest calling, I went on become a Reiki Master Teacher and study Somatic Experiencing and now have a private practice in Brooklyn and online.</b> I specialize in serving queer folks and allies to this community.</p>
+          <p>My trauma education began in my study of Trauma-Informed Yoga and the transformative experience of teaching yoga to survivors of sexual trauma.  <b>Realizing that that body-based trauma work was my deepest calling, I went on to become a Somatic Experiencing Practitioner and Reiki Master and to study the Somatic Touch Therapy work of Kathy Kain. I am also currently deepening my vocal studies in relation to attachment and trauma. I am proud to be a member of Somatic Experiencing International and to assist SE trainings to support the next generation of SE practitioners.</b> I specialize in serving queer folks and allies to this community.</p>
 
           <p>Curiosities in life outside of my therapeutic work include avid reading, solo nature adventures, herbalism, wildcrafting, painting, ceramics, travel, fire-escape herb gardening, performing and taking in the visual and performing arts.  I live in Brooklyn with my spouse, my best friend and our sweet kitty, Franklin.</p>
         </div>
@@ -34,13 +34,40 @@
             <p>As I am not a psychotherapist, some prior experience in either talk therapy or other contemplative practices can be helpful for clients of this work. Since we will focus on the story the body has to tell (in whatever kind of <a href="offerings">session</a> we are doing), it is helpful if some work has already been done on the cognitive level.</p>
         </div>
       </section>
-      <section>
+      <section class="primary">
         <div class="section-wrapper">
           <h2>Where I Work</h2>
           <ul class="work-list">
             <li>I see clients nationally and internationally via Zoom</li>
             <li>I have an office in Clinton Hill, Brooklyn</li>
             <li>I have an office in Midtown Manhattan located at Balance Arts Center</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="section-wrapper">
+          <h2>My Education</h2>
+          <ul class="education-list">
+            <li>
+              <div>Somatic Experiencing International 3 Year Professional Program</div>
+              <ul><li>Approved SE Training Assistant</li></ul>
+            </li>
+            <li>Somatic Touch Skills with Kathy Kain Module 1 Seattle, WA</li>
+            <li>Somatic Touch Skills Levels 1 and 2 with Kathy Kain (upcoming)</li>
+            <li>Reiki Master Training with Reiki Master Tara Tonini</li>
+            <li>The Voice Keeps the Score: Sound As A Portal To Embodiment Training with Linda Thai</li>
+            <li>Certificate in Somatic Embodiment and Regulation Strategies with Linda Thai</li>
+            <li>Luis Mojica Somatics Course</li>
+            <li>IRF (Inner Relationship Focusing) Parts Work Level 1 with Maureen Gallagher</li>
+            <li>Exhale to Inhale Trauma Informed Yoga Teacher Training in NYC</li>
+            <li>200-Hour Yoga Teacher Training with Kusum Institute</li>
+            <li>Birth Doula Training with Debra Pascali Bonaro in NYC</li>
+            <li>Hypnobirth Childbirth class with Gili Levitin</li>
+            <li>Introduction to Chinese Medicine Philosophy with acupuncturist Jasmine Stine</li>
+            <li>BFA in Theatre with minor in Health Communication - Emerson College</li>
+            <li>Health Coach Certification with The Institute for Integrative Nutrition</li>
+            <li>Linklater Voice Training - 2013 - present with various teachers</li>
+            <li>Singing Training - 20 years with multiple teachers</li>
           </ul>
         </div>
       </section>
@@ -61,8 +88,12 @@ export default {
 
 <style lang="scss" scoped>
   @layer view {
-    .work-list li {
-      list-style-type: "~ ";
+    li {
+      list-style-type: "–  ";
+    }
+
+    li li {
+      margin-inline-start: 2rem;
     }
 
     .main-layout {
@@ -94,6 +125,11 @@ export default {
 
     .vertical-offset-image {
       margin-block-end: var(--image-banner-spacing);
+    }
+
+    .education-list {
+      display: grid;
+      gap: 1rem;
     }
   }
 </style>

@@ -5,12 +5,9 @@
             <h1>Contact</h1>
 
             <div class="section-header">For Individual Sessions:</div>
-            <p>I would love to connect with you for a free 20 minute intro call. When you reach out, please tell me a little about what kind of <a href="/offerings">sessions</a> you are interested in, where you fall on the <a href="/pricing">sliding scale</a> and whether you are looking for virtual, in-person or both. Also please note that I am not a psychotherapist, but rather integrate Somatic Experiencing, Reiki and Voice in my work.</p>
+            <p>I would love to connect with you for a free 20 minute intro call. When you reach out, please tell me a little about what kind of <a href="/offerings">sessions</a> you are interested in, where you fall on the <a href="/pricing">sliding scale</a> and whether you are looking for virtual, in-person or both.</p>
 
-            <div class="section-header">For Reiki Training:</div>
-            <p>If you're ready to register, reach out and I will send along payment info and training logistics.</p>
-
-            <p>Questions? Feel free to send questions to be answered via email or request a 15 min Zoom.</p>
+            <p>Also please note that I am not a psychotherapist but rather a Somatic Practitioner integrating Somatic Experiencing, Somatic Touch, Reiki and Voice. At this time, my scope of practice is not covered by insurance.</p>
 
             <form action="/form-success/" method="post" name="contact-form" @submit.prevent="handleFormSubmit">
                 <input type="hidden" name="form-name" value="contact-form" />

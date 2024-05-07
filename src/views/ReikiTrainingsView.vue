@@ -8,7 +8,7 @@
         <main>
             <section id="">
                 <div class="section-wrapper">
-                    <p>I am currently offering Reiki Level 1 training in a hybrid format with the first few hours online and a full Saturday in-person in Brooklyn. Reiki Level 2 and Masters Training will be offered in the future.``</p>
+                    <p>I am currently offering Reiki Level 1 training in a hybrid format with the first few hours online and a full Saturday in-person in Brooklyn. My next Reiki Level 1 training will be announced soon and take place during Summer or Fall 2024. Level 2 and Masters Training will be offered in the future.</p>
 
                     <p>Reiki Training is for everyone whether or not you have received Reiki before. In the training, you will be attuned to the Reiki energy and learn how to bring this practice into your every day life.</p>
                 </div>
@@ -16,8 +16,6 @@
             <section id="">
                 <div class="section-wrapper">
                     <h2>In Reiki Level 1 You Will Learn:</h2>
-                    <img alt="" loading="lazy" src="../assets/images/reiki-level-1-post.webp">
-
                     <ul class="bulleted-list">
                         <li>The history or Reiki</li>
                         <li>What it feels like to give and receive Reiki sessions</li>
@@ -36,17 +34,17 @@
                     <p>The training takes place over 2 days (10.5 hours total including breaks)</p>
 
                     <h3>Day One</h3>
-                    <p>Wednesday April 3rd: 6pm-9:30pm (via Zoom/will be recorded if some students can’t make it, although live attendance is suggested)</p>
+                    <p>TBD: 6pm-9:30pm (via Zoom/will be recorded if some students can’t make it, although live attendance is suggested)</p>
 
                     <h3>Day Two</h3>
-                    <p>Saturday April 6th: 11am-6pm in Clinton Hill, Brooklyn</p>
+                    <p>TBD: 11am-6pm in Clinton Hill, Brooklyn</p>
 
                     <p>Investment: $275</p>
                 </div>
             </section>
             <section id="">
                 <div class="section-wrapper">
-                    <p>If you're ready to register, or have any questions, feel free to <a href="/contact">reach out</a>! You can also request a 15 minute Zoom for us to get to know each other prior to registration.</p>
+                    <p>If you have questions about Reiki Training, please feel free to <a href="/contact">reach out</a>!</p>
                 </div>
             </section>
         </main>

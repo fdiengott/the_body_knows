@@ -66,6 +66,10 @@
     background-color: var(--color-bg);
   }
 
+  section:not(.primary) .section-wrapper {
+    padding-block: 0;
+  }
+
   section.primary {
     background-color: var(--color-primary);
     color: white;
