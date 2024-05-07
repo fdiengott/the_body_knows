@@ -1,8 +1,8 @@
 <template>
-    <div class="main-layout">
+    <div class="main-lagaout">
         <NavBar />
         <section class="image-banner">
-            <h1>Offerings</h1>
+            <h1>Work with Me</h1>
             <img alt="Two stocks of rosemary with blue flowers. In the background, there are two more stocks blurred with soft nature behind." loading="lazy" src="../assets/images/rosemary.webp">
         </section>
         <main>
@@ -43,7 +43,7 @@
             </section>
             <section class="primary" id="somatic-experiencing">
                 <div class="section-wrapper">
-                    <h2>Learn More about Each Practice</h2>
+                    <h2 class="vertical-offset">Learn More about Each Practice</h2>
                     <h3>Somatic Experiencing (SE™)</h3>
                     <img alt="A leather-bound book opened in the middle with the top of the pages showing in gold. The book has a satiny bookmark in its open page with blurred grass in the background." loading="lazy" src="../assets/images/open_book.webp">
 
@@ -111,7 +111,6 @@ export default {
         }
 
         h1 {
-            font-size: var(--fs-700);
             font-weight: 600;
             margin-block: 0.5em;
         }
