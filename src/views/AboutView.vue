@@ -3,7 +3,21 @@
     <NavBar />
     <section>
       <h1>Meet Josephine SEP, CYT, RMT</h1>
-      <img alt="Therapist Josephine is seen with short hair and dangling wooden earrings gazing to the right with a soft smile. The background is soft, lush woods gently blurred." class="headshot" loading="lazy" src="../assets/images/Jo_pic_1.webp">
+      <img 
+        alt="Therapist Josephine is seen with short hair and dangling wooden earrings gazing to the right with a soft smile. The background is soft, lush woods gently blurred." 
+        class="headshot" 
+        loading="lazy" 
+        srcset="../assets/images/Jo_pic_1-640.jpg 640w, ../assets/images/Jo_pic_1-768.jpg 768w, ../assets/images/Jo_pic_1-1024.jpg 1024w, ../assets/images/Jo_pic_1-1366.jpg 1366w, ../assets/images/Jo_pic_1-1600.jpg 1600w, ../assets/images/Jo_pic_1.webp 2400w"
+        sizes="
+          (min-width: 640px) 768px,
+          (min-width: 768px) 1024px,
+          (min-width: 1024px) 1366px,
+          (min-width: 1366px) 1600px,
+          (min-width: 1600px) 2400px,
+          100vw
+        "
+        src="../assets/images/Jo_pic_1.webp"
+      >
     </section>
     <main class="about">
       <section class="vertical-offset-image"></section>
@@ -111,7 +125,7 @@ export default {
     }
 
     .headshot {
-      max-height: clamp(20rem, 15vw + 30rem, 50rem);
+      max-height: clamp(20rem, 15vw + 30rem, 66vh);
       width: 100%;
       object-fit: cover;
       object-position: center;

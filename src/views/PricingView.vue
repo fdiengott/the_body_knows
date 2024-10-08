@@ -8,7 +8,7 @@
         <main>
             <section>
                 <div class="section-wrapper">
-                    <p><b>I currently have openings in my practice. At this time, all of my reduced-price sessions are full, but please feel free to reach out if you’d like to be added to my waitlist.</b></p>
+                    <p><b>I currently have openings in my practice at my full rate. At this time, the two lower tiers of my sliding scale are full, but please feel free to reach out if you’d like to be added to my waitlist.</b></p>
 
                     <div class="vertical-offset"></div>
 
@@ -16,13 +16,13 @@
 
                     <p>It is important to me to have transparency around money with my clients - so here is how my pricing model works…</p>
 
-                    <p>Due to the time, preparation, and effort that goes into such individual work, the rate for individual sessions is sliding scale $150-170 for 50 mins virtual or 60 mins in-person. This rate also accounts for my ongoing case supervision and continuing education to deepen the work I offer.</p>
+                    <p>Due to the time, preparation and effort that goes into such individual work, the rate for individual sessions is $175. This rate also accounts for my ongoing case supervision and continuing education to deepen the work I offer.</p>
 
                     <p>You can choose your session frequency (weekly, bi-weekly) or in some cases monthly, based on what is most financially comfortable/your preference.</p>
 
-                    <p>In the interest of accessibility, I dedicate at least 60% of my practice to reduced-price sliding scale ($115-150) sessions for those in need. These rates are available for folks who make less than 40K per year. Please take a look at the image below which highlights what rate you would pay based on your access to financial resources.</p>
+                    <p>In the interest of accessibility, I dedicate at least 65% of my practice to the 115-165 sliding scale for those in need. The bottom tier (115-150) is available for folks who make less than 40K per year. Please take a look at the image below which highlights what rate you would pay based on your access to financial resources.</p>
 
-                    <img alt="" class="scale-up" loading="lazy" src="../assets/images/sliding-scale-image-edited.png">
+                    <img alt="A diagram explaining the three price tiers and who should pay each one" class="scale-up" loading="lazy" src="../assets/images/bottle-sliding-scale-image.png">
                 </div>
             </section>
             <section class="primary">
