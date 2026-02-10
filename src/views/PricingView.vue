@@ -8,7 +8,8 @@
         <main>
             <section>
                 <div class="section-wrapper">
-                    <p><b>I currently have openings in my practice at my full rate. At this time, the two lower tiers of my sliding scale are full, but please feel free to reach out if you’d like to be added to my waitlist.</b></p>
+                    <p><b>My <i>virtual</i> practice has openings at all tiers of the need-based sliding scale.</b></p>
+                    <p><b>My <i>in-person</i> practice in Brooklyn currently has openings at the full rate (sliding scale currently full).</b></p>
 
                     <div class="vertical-offset"></div>
 
@@ -20,7 +21,7 @@
 
                     <p>You can choose your session frequency (weekly, bi-weekly) or in some cases monthly, based on what is most financially comfortable/your preference.</p>
 
-                    <p>In the interest of accessibility, I dedicate at least 65% of my practice to the 115-165 sliding scale for those in need. The bottom tier (115-150) is available for folks who make less than 40K per year. Please take a look at the image below which highlights what rate you would pay based on your access to financial resources.</p>
+                    <p>The bottom tier (130-150) is available for folks who make less than 45K per year. Please take a look at the image below which highlights what rate you would pay based on your access to financial resources.</p>
 
                     <img alt="A diagram explaining the three price tiers and who should pay each one" class="scale-up" loading="lazy" src="../assets/images/bottle-sliding-scale-image.png">
                 </div>

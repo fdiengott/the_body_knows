@@ -5,8 +5,7 @@
       <div class="text-container blur-background" ref="textContainer">
         <h1>
           <div>Somatic Experiencing</div>
-          <div>Reiki/Reiki Training</div>
-          <div>Voice</div>
+          <div>Reiki – Voice</div>
         </h1>
 
         <RouterLink class="link-hover learn-more" to="/about">Learn More</RouterLink>
