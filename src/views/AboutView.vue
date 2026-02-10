@@ -65,8 +65,10 @@
               <div>Somatic Experiencing International 3 Year Professional Program</div>
               <ul><li>Approved SE Training Assistant</li></ul>
             </li>
-            <li>Somatic Touch Skills with Kathy Kain Module 1 Seattle, WA</li>
-            <li>Somatic Touch Skills Levels 1 and 2 with Kathy Kain (upcoming)</li>
+            <li>
+              <div>Somatic Touch Skills with Kathy Kain Modules 1, 2, and 3</div>
+              <ul><li>Approved Somatic Touch Skills Assistant</li></ul>
+            </li>
             <li>Reiki Master Training with Reiki Master Tara Tonini</li>
             <li>The Voice Keeps the Score: Sound As A Portal To Embodiment Training with Linda Thai</li>
             <li>Certificate in Somatic Embodiment and Regulation Strategies with Linda Thai</li>

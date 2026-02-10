@@ -10,6 +10,7 @@
                 <div class="section-wrapper">
                     <p><b>My <i>virtual</i> practice has openings at all tiers of the need-based sliding scale.</b></p>
                     <p><b>My <i>in-person</i> practice in Brooklyn currently has openings at the full rate (sliding scale currently full).</b></p>
+                    <p><b>For SE students: I am an approved Personal Session Provider at the Beginning Level. SE students feel free to reach out for student rates.</b></p>
 
                     <div class="vertical-offset"></div>
 
